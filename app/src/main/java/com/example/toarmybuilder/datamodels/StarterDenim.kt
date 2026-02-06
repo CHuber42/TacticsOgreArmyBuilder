@@ -1,22 +1,23 @@
 package com.example.toarmybuilder.datamodels
 
 import com.example.toarmybuilder.datamodels.components.Element
-import com.example.toarmybuilder.datamodels.components.Jobs
 
-object starterDenim : Character(
-    name = "Denim",
-    element = Element.WATER,
-    movement = 5,
-    jump = 2,
+class StarterDenim(
+    override val Id: Int = 1,
+    override val name: String = "Denim",
+    override val element: Element = Element.WATER,
+    override val movement: Int = 5,
+    override val jump: Int = 2,
 //    job = JobCategory.MALE.WARRIOR, //todo
-    hp = 50,
-    mp = 10,
-    str = 25,
-    vit = 25,
-    dex = 25,
-    int = 25,
-    mnd = 25,
-    agi = 25,
-    sprite = 0 //todo
-){
+    override val hp: Int = 50,
+    override val mp: Int = 10,
+    override val str: Int = 25,
+    override val vit: Int = 25,
+    override val dex: Int = 25,
+    override val int: Int = 25,
+    override val mnd: Int = 25,
+    override val agi: Int = 25,
+    override val sprite: Int = 0,
+    override val levels: List<String>//todo
+) : Character(){
 }

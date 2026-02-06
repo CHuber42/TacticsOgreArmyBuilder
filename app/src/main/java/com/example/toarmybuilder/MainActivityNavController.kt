@@ -14,7 +14,6 @@ import com.example.toarmybuilder.snesversion.SnesVersionHomeScreen
 fun MainActivityNavController() {
     val navController = rememberNavController()
     val navigateFun : (destination: Any) -> Unit = { destination -> navController.navigate(destination)}
-//    Log.d("ZXZ", VersionSelectScreen.toString())
     NavHost(
         navController = navController,
         startDestination = VersionSelectScreen

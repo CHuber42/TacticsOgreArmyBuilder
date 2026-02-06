@@ -16,14 +16,14 @@ fun SnesVersionHomeScreen(){
         .fillMaxSize()
     ) {
         val characterDetailsModifier = Modifier
-            .fillMaxHeight(0.8F)
+            .fillMaxHeight(0.8F) // 4/5 of Screen Height for Character Details
             .fillMaxWidth()
         CharacterDetailsContainer(characterDetailsModifier)
 
-        val previewModifier = Modifier
-            .fillMaxHeight(0.2F)
+        val armyPreviewModifier = Modifier
+            .fillMaxHeight(0.2F) // 1/5 of Screen Height for ArmyPreview
             .fillMaxWidth()
             .align(Alignment.BottomCenter)
-        ArmyPreviewContainer(previewModifier)
+        ArmyPreviewContainer(armyPreviewModifier)
     }
 }
