@@ -1,0 +1,13 @@
+package com.example.toarmybuilder.navigationaccessories
+
+import kotlinx.serialization.Serializable
+
+
+@Serializable
+object RebornVersionHomeScreen
+@Serializable
+object LuctVersionHomeScreen
+@Serializable
+object SnesVersionHomeScreen
+@Serializable
+object VersionSelectScreen
