@@ -1,4 +1,4 @@
-package com.example.toarmybuilder.snesversion
+package com.example.toarmybuilder.snesversion.armypreview
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
@@ -11,7 +11,7 @@ import androidx.compose.ui.res.painterResource
 import com.example.toarmybuilder.R
 
 @Composable
-fun ArmyPreviewFragment(previewModifier: Modifier){
+fun ArmyPreviewContainer(previewModifier: Modifier){
     Box(modifier = previewModifier,
         contentAlignment = Alignment.BottomCenter){
         Image(

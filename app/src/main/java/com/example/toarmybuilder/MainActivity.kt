@@ -35,12 +35,12 @@ class MainActivity : ComponentActivity() {
                         contentScale = ContentScale.FillHeight,
                         modifier = Modifier.fillMaxHeight()
                     )
-                    // Denim Sprite //todo
-//                    Image(
-//                        painter = painterResource(id = R.drawable.denim1),
-//                        contentDescription = null,
-//                        contentScale = ContentScale.None
-//                    )
+//                     Denim Sprite //todo
+                    Image(
+                        painter = painterResource(id = R.drawable.denim1),
+                        contentDescription = null,
+                        contentScale = ContentScale.None
+                    )
                     MainActivityNavController()
                 }
             }
