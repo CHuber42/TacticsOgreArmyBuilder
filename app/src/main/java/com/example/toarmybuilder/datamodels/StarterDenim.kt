@@ -1,6 +1,7 @@
 package com.example.toarmybuilder.datamodels
 
 import com.example.toarmybuilder.datamodels.components.Element
+import com.example.toarmybuilder.R
 
 class StarterDenim(
     override val Id: Int = 1,
@@ -15,9 +16,9 @@ class StarterDenim(
     override val vit: Int = 25,
     override val dex: Int = 25,
     override val int: Int = 25,
-    override val mnd: Int = 25,
+    override val men: Int = 25,
     override val agi: Int = 25,
-    override val sprite: Int = 0,
+    override val sprite: Int = R.drawable.denim1,
     override val levels: List<String>//todo
 ) : Character(){
 }

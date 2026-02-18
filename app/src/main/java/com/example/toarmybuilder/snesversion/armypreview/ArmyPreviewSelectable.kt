@@ -25,6 +25,5 @@ fun ArmyPreviewSelectable(
             contentDescription = null,
             contentScale = ContentScale.None
         )
-        Text(text = listItem.Id.toString())
     }
 }

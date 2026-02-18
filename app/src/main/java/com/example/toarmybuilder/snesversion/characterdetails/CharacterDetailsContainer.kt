@@ -10,10 +10,10 @@ fun CharacterDetailsContainer(characterDetailsContainerModifier: Modifier){
 
         val characterStatsFragmentModifier =
             Modifier.weight(1F)
-        CharacterStatsFragment(characterStatsFragmentModifier)
+        CharacterStatsColumn(characterStatsFragmentModifier)
 
         val characterLevelFragmentModifier =
             Modifier.weight(1F)
-        CharacterLevelsFragment(characterLevelFragmentModifier)
+        CharacterLevelsColumn(characterLevelFragmentModifier)
     }
 }

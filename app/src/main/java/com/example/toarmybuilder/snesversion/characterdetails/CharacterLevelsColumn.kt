@@ -7,10 +7,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 
 @Composable
-fun CharacterStatsFragment(characterStatsModifier: Modifier){
-    Column(modifier = characterStatsModifier,
+fun CharacterLevelsColumn(characterLevelsModifier: Modifier){
+    Column(modifier = characterLevelsModifier,
         horizontalAlignment = Alignment.CenterHorizontally
     ){
-        Text("Stats Display")
+        Text("Levels Select")
     }
 }

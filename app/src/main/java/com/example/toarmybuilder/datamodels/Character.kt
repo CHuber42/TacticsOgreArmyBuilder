@@ -18,6 +18,6 @@ abstract class Character() {
     abstract val dex: Int
     abstract val agi: Int
     abstract val int: Int
-    abstract val mnd: Int
+    abstract val men: Int
     abstract val levels: List<String>
 }

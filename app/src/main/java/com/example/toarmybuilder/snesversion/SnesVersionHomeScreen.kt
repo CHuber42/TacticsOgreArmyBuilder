@@ -24,6 +24,8 @@ fun SnesVersionHomeScreen(){
             .fillMaxHeight(0.2F) // 1/5 of Screen Height for ArmyPreview
             .fillMaxWidth()
             .align(Alignment.BottomCenter)
-        ArmyPreviewContainer(armyPreviewModifier)
+        ArmyPreviewContainer(
+            armyPreviewModifier
+        )
     }
 }
