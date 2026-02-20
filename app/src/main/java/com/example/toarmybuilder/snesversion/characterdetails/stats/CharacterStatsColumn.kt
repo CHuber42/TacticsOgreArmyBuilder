@@ -32,7 +32,6 @@ fun CharacterStatsColumn(
     ){
 
         TitleRow(focusedCharacter.name, focusedCharacter.Id, focusedCharacter.creatureType)
-        StatRow(focusedCharacter.name, focusedCharacter.creatureType)
         Image(
             painter = painterResource(id = focusedCharacter.sprite),
             contentDescription = null,
