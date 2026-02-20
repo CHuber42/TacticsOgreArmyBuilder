@@ -43,31 +43,31 @@ fun ClassTypeSelect(
         ) {
             DropdownMenuItem({ Text("Male") }, onClick = {
                 expanded = false
-                snesVersionViewModel.focusedCharacter.creatureType = "Male"
+//                snesVersionViewModel.focusedCharacter.creatureType = "Male"
             })
             DropdownMenuItem({ Text("Female") }, onClick = {
                 expanded = false
-                snesVersionViewModel.focusedCharacter.creatureType = "Female"
+//                snesVersionViewModel.focusedCharacter.creatureType = "Female"
             })
             DropdownMenuItem({ Text("Demihuman") }, onClick = {
                 expanded = false
-                snesVersionViewModel.focusedCharacter.creatureType = "Demihuman"
+//                snesVersionViewModel.focusedCharacter.creatureType = "Demihuman"
             })
             DropdownMenuItem({ Text("Dragon") }, onClick = {
                 expanded = false
-                snesVersionViewModel.focusedCharacter.creatureType = "Dragon"
+//                snesVersionViewModel.focusedCharacter.creatureType = "Dragon"
             })
             DropdownMenuItem({ Text("Beast") }, onClick = {
                 expanded = false
-                snesVersionViewModel.focusedCharacter.creatureType = "Beast"
+//                snesVersionViewModel.focusedCharacter.creatureType = "Beast"
             })
             DropdownMenuItem({ Text("Golem") }, onClick = {
                 expanded = false
-                snesVersionViewModel.focusedCharacter.creatureType = "Golem"
+//                snesVersionViewModel.focusedCharacter.creatureType = "Golem"
             })
             DropdownMenuItem({ Text("Unique") }, onClick = {
                 expanded = false
-                snesVersionViewModel.focusedCharacter.creatureType = "Unique"
+//                snesVersionViewModel.focusedCharacter.creatureType = "Unique"
             })
         }
     }

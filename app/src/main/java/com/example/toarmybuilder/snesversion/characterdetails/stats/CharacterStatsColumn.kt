@@ -5,6 +5,8 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
@@ -12,13 +14,14 @@ import androidx.compose.ui.res.painterResource
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.toarmybuilder.R
 import com.example.toarmybuilder.snesversion.SnesVersionViewModel
+import com.example.toarmybuilder.snesversion.datamodels.Character
 import com.example.toarmybuilder.utilities.Wallpaper
 
 @Composable
 fun CharacterStatsColumn(
     snesVersionViewModel: SnesVersionViewModel = viewModel()
 ){
-    val focusedCharacter = snesVersionViewModel.focusedCharacter
+    val focusedCharacter : Character by snesVersionViewModel.focusedCharacter.collectAsState()
 
     Wallpaper(R.drawable.backgroundtexture1)
 
@@ -27,6 +30,7 @@ fun CharacterStatsColumn(
         .fillMaxWidth(),
         horizontalAlignment = Alignment.CenterHorizontally
     ){
+        StatRow(focusedCharacter.Id.toString(), "")
         StatRow(focusedCharacter.name, focusedCharacter.creatureType)
         Image(
             painter = painterResource(id = focusedCharacter.sprite),

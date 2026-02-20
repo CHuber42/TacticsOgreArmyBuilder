@@ -3,13 +3,18 @@ package com.example.toarmybuilder.snesversion
 import androidx.lifecycle.ViewModel
 import com.example.toarmybuilder.snesversion.datamodels.Character
 import com.example.toarmybuilder.snesversion.datamodels.StarterDenim
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
 
 class SnesVersionViewModel : ViewModel() {
 
-    val armyList = listOf(
-        StarterDenim(Id = 1),
-        StarterDenim(Id = 2),
-        StarterDenim(Id = 3),
+    val armyList
+        get() = _armyList
+    private val _armyList = listOf(
+        StarterDenim(Id = 1, hp = 10),
+        StarterDenim(Id = 2, hp = 20),
+        StarterDenim(Id = 3, hp = 30),
         StarterDenim(Id = 4),
         StarterDenim(Id = 5),
         StarterDenim(Id = 6),
@@ -18,5 +23,12 @@ class SnesVersionViewModel : ViewModel() {
         StarterDenim(Id = 9),
         StarterDenim(Id = 10)
     )
-    val focusedCharacter : Character = armyList[0]
+
+    private val _focusedCharacter = MutableStateFlow<Character>(armyList[0])
+    val focusedCharacter : StateFlow<Character> = _focusedCharacter.asStateFlow()
+
+    fun setFocusedCharacter(id: Int){
+        val chosen = _armyList.find {it.Id == id} as Character
+        _focusedCharacter.value = chosen
+    }
 }
