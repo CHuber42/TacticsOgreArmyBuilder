@@ -25,7 +25,7 @@ fun CharacterStatsColumn(
 ){
     val focusedCharacter : Character by snesVersionViewModel.focusedCharacter.collectAsState()
 
-    Wallpaper(R.drawable.backgroundtexture1)
+    Wallpaper(R.drawable.backgroundtexture2)
 
     // Contents
     Column(modifier = Modifier

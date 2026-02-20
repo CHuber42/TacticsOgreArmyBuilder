@@ -17,7 +17,7 @@ import com.example.toarmybuilder.snesversion.datamodels.Character
 fun CharacterLevelsColumn(
     snesVersionViewModel: SnesVersionViewModel = viewModel()
 ){
-    Wallpaper(R.drawable.backgroundtexture1)
+    Wallpaper(R.drawable.backgroundtexture2)
     val focusedCharacter : Character by snesVersionViewModel.focusedCharacter.collectAsState()
     val levels = focusedCharacter.levels
 //    val focusedCharacter = snesVersionViewModel.focusedCharacter
