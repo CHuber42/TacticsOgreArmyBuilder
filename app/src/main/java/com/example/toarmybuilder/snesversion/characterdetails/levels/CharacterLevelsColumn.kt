@@ -1,6 +1,8 @@
 package com.example.toarmybuilder.snesversion.characterdetails.levels
 
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.Text
@@ -16,7 +18,10 @@ fun CharacterLevelsColumn(
     snesVersionViewModel: SnesVersionViewModel = viewModel()
 ){
     val levels = snesVersionViewModel.focusedCharacter.levels
-    Text("Levels Select")
+    val focusedCharacter = snesVersionViewModel.focusedCharacter
+    if (focusedCharacter.creatureTypeSelectable){
+        ClassTypeSelect()
+    }
     LazyColumn(
         horizontalAlignment = Alignment.CenterHorizontally
     ){

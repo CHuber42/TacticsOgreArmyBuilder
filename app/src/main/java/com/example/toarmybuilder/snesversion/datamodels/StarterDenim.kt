@@ -6,7 +6,7 @@ import com.example.toarmybuilder.snesversion.datamodels.components.Element
 class StarterDenim(
     override val Id: Int = 1,
     override val name: String = "Denim",
-    override val creatureTypeSelectable: Boolean = false,
+    override val creatureTypeSelectable: Boolean = true,
     override val creatureType: String = "Male",
     override val element: Element = Element.WATER,
     override val movement: Int = 5,

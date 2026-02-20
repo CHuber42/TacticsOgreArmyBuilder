@@ -5,12 +5,14 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.toarmybuilder.snesversion.SnesVersionViewModel
 
 @Composable
-fun LevelRow(LevelItem: String){
-    Row(modifier = Modifier
-        .fillMaxWidth()
-    ){
-        Text(LevelItem)
+fun ClassTypeSelect(
+    snesVersionViewModel: SnesVersionViewModel = viewModel()
+){
+    Row(modifier = Modifier.fillMaxWidth()){
+        Text("Select Type") // TODO
     }
 }
