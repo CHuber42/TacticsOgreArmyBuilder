@@ -10,13 +10,16 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.toarmybuilder.R
 import com.example.toarmybuilder.snesversion.SnesVersionViewModel
+import com.example.toarmybuilder.utilities.Wallpaper
 import java.util.logging.Level
 
 @Composable
 fun CharacterLevelsColumn(
     snesVersionViewModel: SnesVersionViewModel = viewModel()
 ){
+    Wallpaper(R.drawable.backgroundtexture1)
     val levels = snesVersionViewModel.focusedCharacter.levels
     val focusedCharacter = snesVersionViewModel.focusedCharacter
     LazyColumn(
