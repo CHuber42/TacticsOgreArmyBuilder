@@ -7,6 +7,7 @@ abstract class Character() {
     abstract val sprite : Int
     abstract val name: String
 
+    abstract val creatureTypeSelectable : Boolean
     abstract val creatureType: String
     abstract val element: Element
     abstract val movement: Int

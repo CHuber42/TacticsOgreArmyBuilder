@@ -6,6 +6,7 @@ import com.example.toarmybuilder.snesversion.datamodels.components.Element
 class StarterDenim(
     override val Id: Int = 1,
     override val name: String = "Denim",
+    override val creatureTypeSelectable: Boolean = false,
     override val creatureType: String = "Male",
     override val element: Element = Element.WATER,
     override val movement: Int = 5,
@@ -21,6 +22,6 @@ class StarterDenim(
     override val agi: Int = 25,
     override val sprite: Int = R.drawable.denim1,
     override val levels: List<String>//todo
-) : com.example.toarmybuilder.snesversion.datamodels.Character() {
+) : Character() {
 
 }

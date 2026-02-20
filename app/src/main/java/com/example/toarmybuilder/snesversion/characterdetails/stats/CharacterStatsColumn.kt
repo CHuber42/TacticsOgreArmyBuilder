@@ -28,7 +28,7 @@ fun CharacterStatsColumn(
             .fillMaxWidth(),
             horizontalAlignment = Alignment.CenterHorizontally
         ){
-            StatRow(statLabel = focusedCharacter.name, statValue = focusedCharacter.creatureType)
+            StatRow(focusedCharacter.name, focusedCharacter.creatureType)
             Image(
                 painter = painterResource(id = focusedCharacter.sprite),
                 contentDescription = null,
