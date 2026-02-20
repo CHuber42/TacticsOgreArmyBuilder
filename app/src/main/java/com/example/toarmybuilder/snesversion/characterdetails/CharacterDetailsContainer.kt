@@ -1,5 +1,6 @@
 package com.example.toarmybuilder.snesversion.characterdetails
 
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -7,15 +8,18 @@ import com.example.toarmybuilder.snesversion.characterdetails.levels.CharacterLe
 import com.example.toarmybuilder.snesversion.characterdetails.stats.CharacterStatsColumn
 
 @Composable
-fun CharacterDetailsContainer(characterDetailsContainerModifier: Modifier){
-    Row(modifier = characterDetailsContainerModifier){
-
+fun CharacterDetailsContainer(){
+    Row(){
         val characterStatsFragmentModifier =
             Modifier.weight(1F)
-        CharacterStatsColumn(characterStatsFragmentModifier)
+        Box(characterStatsFragmentModifier){
+            CharacterStatsColumn()
+        }
 
         val characterLevelFragmentModifier =
             Modifier.weight(1F)
-        CharacterLevelsColumn(characterLevelFragmentModifier)
+        Box(characterLevelFragmentModifier){
+            CharacterLevelsColumn()
+        }
     }
 }

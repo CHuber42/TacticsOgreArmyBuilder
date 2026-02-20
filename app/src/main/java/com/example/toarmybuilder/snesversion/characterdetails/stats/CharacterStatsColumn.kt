@@ -16,34 +16,31 @@ import com.example.toarmybuilder.utilities.Wallpaper
 
 @Composable
 fun CharacterStatsColumn(
-    characterStatsModifier: Modifier,
     snesVersionViewModel: SnesVersionViewModel = viewModel()
 ){
     val focusedCharacter = snesVersionViewModel.focusedCharacter
-    Box(modifier = characterStatsModifier) {
-        Wallpaper(R.drawable.backgroundtexture1)
 
-        // Contents
-        Column(modifier = Modifier
-            .fillMaxWidth(),
-            horizontalAlignment = Alignment.CenterHorizontally
-        ){
-            StatRow(focusedCharacter.name, focusedCharacter.creatureType)
-            Image(
-                painter = painterResource(id = focusedCharacter.sprite),
-                contentDescription = null,
-                contentScale = ContentScale.None
-            )
-//            StatRow() // TODO: JOB
-            StatRow(statLabel = "Ali", statValue = "L / N / C") // TODO
-            StatRow(statLabel = "HP", statValue = focusedCharacter.hp.toString())
-            StatRow(statLabel = "MP", statValue = focusedCharacter.mp.toString())
-            StatRow(statLabel = "Str", statValue = focusedCharacter.str.toString())
-            StatRow(statLabel = "Vit", statValue = focusedCharacter.vit.toString())
-            StatRow(statLabel = "Dex", statValue = focusedCharacter.dex.toString())
-            StatRow(statLabel = "Int", statValue = focusedCharacter.int.toString())
-            StatRow(statLabel = "Men", statValue = focusedCharacter.men.toString())
-            StatRow(statLabel = "Agi", statValue = focusedCharacter.agi.toString())
-        }
+    Wallpaper(R.drawable.backgroundtexture1)
+
+    // Contents
+    Column(modifier = Modifier
+        .fillMaxWidth(),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ){
+        StatRow(focusedCharacter.name, focusedCharacter.creatureType)
+        Image(
+            painter = painterResource(id = focusedCharacter.sprite),
+            contentDescription = null,
+            contentScale = ContentScale.None
+        )
+        StatRow(statLabel = "Ali", statValue = "L / N / C") // TODO
+        StatRow(statLabel = "HP", statValue = focusedCharacter.hp.toString())
+        StatRow(statLabel = "MP", statValue = focusedCharacter.mp.toString())
+        StatRow(statLabel = "Str", statValue = focusedCharacter.str.toString())
+        StatRow(statLabel = "Vit", statValue = focusedCharacter.vit.toString())
+        StatRow(statLabel = "Dex", statValue = focusedCharacter.dex.toString())
+        StatRow(statLabel = "Int", statValue = focusedCharacter.int.toString())
+        StatRow(statLabel = "Men", statValue = focusedCharacter.men.toString())
+        StatRow(statLabel = "Agi", statValue = focusedCharacter.agi.toString())
     }
 }

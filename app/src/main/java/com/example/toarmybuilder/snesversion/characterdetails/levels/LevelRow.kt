@@ -4,6 +4,6 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 
 @Composable
-fun LevelRow(count: Int){
-    Text(count.toString())
+fun LevelRow(LevelItem: String){
+    Text(LevelItem)
 }

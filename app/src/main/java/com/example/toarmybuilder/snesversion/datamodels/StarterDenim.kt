@@ -21,7 +21,7 @@ class StarterDenim(
     override val men: Int = 25,
     override val agi: Int = 25,
     override val sprite: Int = R.drawable.denim1,
-    override val levels: List<String>//todo
+    override val levels: List<String> = List(50){index -> index.toString()} //todo
 ) : Character() {
 
 }
