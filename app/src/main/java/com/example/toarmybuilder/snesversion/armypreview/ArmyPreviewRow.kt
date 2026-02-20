@@ -4,8 +4,7 @@ import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.example.toarmybuilder.datamodels.Character
-import com.example.toarmybuilder.datamodels.StarterDenim
+import com.example.toarmybuilder.snesversion.datamodels.Character
 
 @Composable
 fun ArmyPreviewRow(

@@ -1,8 +1,8 @@
 package com.example.toarmybuilder.snesversion
 
 import androidx.lifecycle.ViewModel
-import com.example.toarmybuilder.datamodels.Character
-import com.example.toarmybuilder.datamodels.StarterDenim
+import com.example.toarmybuilder.snesversion.datamodels.Character
+import com.example.toarmybuilder.snesversion.datamodels.StarterDenim
 
 class SnesVersionViewModel : ViewModel() {
 
