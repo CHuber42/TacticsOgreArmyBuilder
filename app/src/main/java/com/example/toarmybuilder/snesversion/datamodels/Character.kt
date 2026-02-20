@@ -3,23 +3,23 @@ package com.example.toarmybuilder.snesversion.datamodels
 import com.example.toarmybuilder.snesversion.datamodels.components.Element
 
 abstract class Character() {
-    abstract val Id : Int
-    abstract val sprite : Int
-    abstract val name: String
+    abstract var Id : Int
+    abstract var sprite : Int
+    abstract var name: String
 
-    abstract val creatureTypeSelectable : Boolean
-    abstract val creatureType: String
-    abstract val element: Element
-    abstract val movement: Int
-    abstract val jump: Int
-    //    abstract val job: Jobs,
-    abstract val hp: Int
-    abstract val mp: Int
-    abstract val str: Int
-    abstract val vit: Int
-    abstract val dex: Int
-    abstract val agi: Int
-    abstract val int: Int
-    abstract val men: Int
-    abstract val levels: List<String>
+    abstract var creatureTypeSelectable : Boolean
+    abstract var creatureType: String
+    abstract var element: Element
+    abstract var movement: Int
+    abstract var jump: Int
+    //    abstract var job: Jobs,
+    abstract var hp: Int
+    abstract var mp: Int
+    abstract var str: Int
+    abstract var vit: Int
+    abstract var dex: Int
+    abstract var agi: Int
+    abstract var int: Int
+    abstract var men: Int
+    abstract var levels: List<String>
 }

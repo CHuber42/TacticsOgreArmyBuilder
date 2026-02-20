@@ -19,14 +19,17 @@ fun CharacterLevelsColumn(
 ){
     val levels = snesVersionViewModel.focusedCharacter.levels
     val focusedCharacter = snesVersionViewModel.focusedCharacter
-    if (focusedCharacter.creatureTypeSelectable){
-        ClassTypeSelect()
-    }
     LazyColumn(
         horizontalAlignment = Alignment.CenterHorizontally
     ){
+        if(focusedCharacter.creatureTypeSelectable){
+            item{
+                ClassTypeSelect()
+            }
+        }
         items(levels){
                 item -> LevelRow(item)
         }
     }
+
 }
