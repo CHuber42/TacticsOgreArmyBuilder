@@ -25,7 +25,7 @@ fun ArmyPreviewSelectable(
         ){
         // Denim Sprite // todo
         Image(
-            painter = painterResource(id = R.drawable.denim1),
+            painter = painterResource(id = listItem.sprite),
             contentDescription = null,
             contentScale = ContentScale.None
         )
