@@ -1,6 +1,7 @@
 package com.example.toarmybuilder.snesversion.datamodels.components
 
 abstract class CharacterClass() {
+    abstract val sprite: Int
     abstract val name: String
 
 //    abstract val characterAlignment : CharacterAlignment

@@ -23,6 +23,7 @@ class StarterDenim(
     override var men: Int = 25,
     override var agi: Int = 25,
     override var sprite: Int = R.drawable.denim1,
+    override val uniqueSprite: Boolean = true,
     override var levels: List<CharacterClass> = List(50){ Jobs.Male.Warrior } //todo
 ) : Character() {
 

@@ -4,8 +4,10 @@ import com.example.toarmybuilder.snesversion.datamodels.components.CharacterClas
 import com.example.toarmybuilder.snesversion.datamodels.components.Element
 
 abstract class Character() {
+
     abstract var Id : Int
     abstract var sprite : Int
+    abstract val uniqueSprite : Boolean
     abstract var name: String
 
     abstract var creatureTypeSelectable : Boolean
