@@ -15,9 +15,10 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import com.example.toarmybuilder.snesversion.datamodels.components.CharacterClass
 
 @Composable
-fun LevelRow(index: Int, LevelItem: String){
+fun LevelRow(index: Int, LevelItem: CharacterClass){
     var expanded by rememberSaveable { mutableStateOf(false) }
     HorizontalDivider()
     Row(modifier = Modifier
@@ -27,9 +28,9 @@ fun LevelRow(index: Int, LevelItem: String){
     ){
         Text((index + 1).toString()) // Add one for level display
         TextButton(onClick = {expanded = !expanded}) {
-            Text(LevelItem)
+            Text(LevelItem.name)
             DropdownMenu(expanded = expanded, onDismissRequest = {expanded = false}) {
-                DropdownMenuItem(text = {Text(LevelItem)}, onClick = {expanded = false})
+                DropdownMenuItem(text = {Text(LevelItem.name)}, onClick = {expanded = false})
                 DropdownMenuItem(text = {Text("Dragoon")}, onClick = {expanded = false})
             }
         }

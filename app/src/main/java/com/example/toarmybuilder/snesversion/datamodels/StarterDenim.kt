@@ -1,7 +1,9 @@
 package com.example.toarmybuilder.snesversion.datamodels
 
 import com.example.toarmybuilder.R
+import com.example.toarmybuilder.snesversion.datamodels.components.CharacterClass
 import com.example.toarmybuilder.snesversion.datamodels.components.Element
+import com.example.toarmybuilder.snesversion.datamodels.components.Jobs
 
 class StarterDenim(
     override var Id: Int = 1,
@@ -21,7 +23,7 @@ class StarterDenim(
     override var men: Int = 25,
     override var agi: Int = 25,
     override var sprite: Int = R.drawable.denim1,
-    override var levels: List<String> = List(50){index -> "Warrior"} //todo
+    override var levels: List<CharacterClass> = List(50){ Jobs.Male.Warrior } //todo
 ) : Character() {
 
 }

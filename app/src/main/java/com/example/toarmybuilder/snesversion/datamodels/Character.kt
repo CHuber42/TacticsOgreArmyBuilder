@@ -1,5 +1,6 @@
 package com.example.toarmybuilder.snesversion.datamodels
 
+import com.example.toarmybuilder.snesversion.datamodels.components.CharacterClass
 import com.example.toarmybuilder.snesversion.datamodels.components.Element
 
 abstract class Character() {
@@ -21,5 +22,5 @@ abstract class Character() {
     abstract var agi: Int
     abstract var int: Int
     abstract var men: Int
-    abstract var levels: List<String>
+    abstract var levels: List<CharacterClass>
 }

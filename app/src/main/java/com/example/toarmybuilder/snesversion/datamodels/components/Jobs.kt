@@ -1,11 +1,9 @@
 package com.example.toarmybuilder.snesversion.datamodels.components
 
-object Jobs {
-    val Male = {}
-}
+import com.example.toarmybuilder.snesversion.datamodels.components.classdata.male.MaleJobs
 
-object Male {
-    val Warrior = Warrior()
+object Jobs {
+    val Male = MaleJobs
 }
 //
 //

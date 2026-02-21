@@ -1,8 +1,9 @@
 package com.example.toarmybuilder.snesversion.datamodels.components
 
 abstract class CharacterClass() {
+    abstract val name: String
 
-    abstract val characterAlignment : CharacterAlignment
+//    abstract val characterAlignment : CharacterAlignment
     abstract val level: Int
     abstract val walkInWater: Boolean
     abstract val fly: Boolean
@@ -11,7 +12,7 @@ abstract class CharacterClass() {
     abstract val acceptableCharacterAlignment: List<CharacterAlignment>
     abstract val acceptableElement: List<Element>
     abstract val movement: Int
-    abstract val jump: Int
+//    abstract val jump: Int
     abstract val hp: Int
     abstract val mp: Int
     abstract val str: Int
@@ -21,10 +22,10 @@ abstract class CharacterClass() {
     abstract val int: Int
     abstract val men: Int
     abstract val wt: Int
-    abstract val lefthand: String // todo
-    abstract val righthand: String // todo
-    abstract val body: String // todo
-    abstract val accessory: String // todo
+//    abstract val lefthand: String // todo
+//    abstract val righthand: String // todo
+//    abstract val body: String // todo
+//    abstract val accessory: String // todo
 
     var elementIsValid: Boolean = true
     var characterAlignmentIsValid : Boolean = true
