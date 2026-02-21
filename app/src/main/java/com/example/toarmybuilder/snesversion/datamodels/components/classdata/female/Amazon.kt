@@ -3,8 +3,10 @@ package com.example.toarmybuilder.snesversion.datamodels.components.classdata.fe
 import com.example.toarmybuilder.snesversion.datamodels.components.CharacterAlignment
 import com.example.toarmybuilder.snesversion.datamodels.components.CharacterClass
 import com.example.toarmybuilder.snesversion.datamodels.components.Element
+import com.example.toarmybuilder.R
 
 object Amazon : CharacterClass(){
+    override val sprite: Int = R.drawable.amazon1
     override val name: String = "Amazon"
     override val level: Int = 1
     override val acceptableCharacterAlignment: List<CharacterAlignment> = listOf(

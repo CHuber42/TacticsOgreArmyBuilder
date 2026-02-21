@@ -3,8 +3,9 @@ package com.example.toarmybuilder.snesversion.datamodels.components.classdata.ma
 import com.example.toarmybuilder.snesversion.datamodels.components.CharacterAlignment
 import com.example.toarmybuilder.snesversion.datamodels.components.CharacterClass
 import com.example.toarmybuilder.snesversion.datamodels.components.Element
-
+import com.example.toarmybuilder.R
 object Berserker : CharacterClass(){
+    override val sprite: Int = R.drawable.maleberzerker1
     override val name = "Berserker"
 //    init {
 //        super.setAlignmentValid(characterAlignment)

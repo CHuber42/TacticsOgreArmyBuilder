@@ -35,11 +35,14 @@ fun CharacterStatsColumn(
     ){
 
         TitleRow(focusedCharacter.name, focusedCharacter.Id, focusedCharacter.creatureType)
+
         Image(
             painter = painterResource(id = focusedCharacter.sprite),
             contentDescription = null,
             contentScale = ContentScale.None
         )
+        StatRow(statLabel = "Class", statValue = focusedCharacter.characterClass.name) // TODO
+//        StatRow(statLabel = "Level", statValue = "L / N / C") // TODO
         StatRow(statLabel = "Ali", statValue = "L / N / C") // TODO
         StatRow(statLabel = "HP", statValue = focusedCharacter.hp.toString())
         StatRow(statLabel = "MP", statValue = focusedCharacter.mp.toString())
