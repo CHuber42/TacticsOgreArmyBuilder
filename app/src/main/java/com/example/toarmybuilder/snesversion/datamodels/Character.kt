@@ -26,4 +26,14 @@ abstract class Character() {
     abstract var int: Int
     abstract var men: Int
     abstract var levels: List<CharacterClass>
+    fun applyLevelUp(classLevel: CharacterClass){
+        this.hp += classLevel.hp
+        this.mp += classLevel.mp
+        this.str += classLevel.str
+        this.vit += classLevel.vit
+        this.dex += classLevel.dex
+        this.int += classLevel.int
+        this.men += classLevel.men
+        this.agi += classLevel.agi
+    }
 }

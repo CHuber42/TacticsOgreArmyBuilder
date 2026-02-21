@@ -28,8 +28,9 @@ fun CharacterLevelsColumn(
                 ClassTypeSelect()
             }
         }
-        itemsIndexed(levels){
-                index, item -> LevelRow(index, item)
+        itemsIndexed(levels){ index, item ->
+            LevelRow(index, item)
+            focusedCharacter.applyLevelUp(item)
         }
     }
 }

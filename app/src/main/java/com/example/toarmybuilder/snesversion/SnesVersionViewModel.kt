@@ -7,6 +7,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import com.example.toarmybuilder.R
+import com.example.toarmybuilder.snesversion.datamodels.components.CharacterBuilder
 import com.example.toarmybuilder.snesversion.datamodels.components.CharacterClass
 import com.example.toarmybuilder.snesversion.datamodels.components.Jobs
 
@@ -32,6 +33,7 @@ class SnesVersionViewModel : ViewModel() {
 
     fun setFocusedCharacter(id: Int){
         val chosen = _armyList.find {it.Id == id} as Character
-        _focusedCharacter.value = chosen
+        val characterCopy = CharacterBuilder(chosen)
+        _focusedCharacter.value = characterCopy
     }
 }

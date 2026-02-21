@@ -5,7 +5,7 @@ import com.example.toarmybuilder.snesversion.datamodels.components.CharacterClas
 import com.example.toarmybuilder.snesversion.datamodels.components.Element
 import com.example.toarmybuilder.snesversion.datamodels.components.Jobs
 
-class StarterDenim(
+data class StarterDenim(
 
     override var Id: Int = 1,
     override var name: String = "Denim",
@@ -28,5 +28,4 @@ class StarterDenim(
     override var levels: List<CharacterClass> = List(50){ Jobs.Male.Warrior }, //todo
     override var characterClass: CharacterClass = levels[0]
 ) : Character() {
-
 }
