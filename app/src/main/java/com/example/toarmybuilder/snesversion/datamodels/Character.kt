@@ -3,6 +3,12 @@ package com.example.toarmybuilder.snesversion.datamodels
 import com.example.toarmybuilder.snesversion.datamodels.components.CharacterClass
 import com.example.toarmybuilder.snesversion.datamodels.components.Element
 
+
+// Reminder: Characters() have 3 "key components":
+// 1. A "Template" they init from (Special Character or a generic)
+// 2. An Id
+// 3. A list of Levels
+
 abstract class Character() {
 
     abstract var characterClass: CharacterClass
