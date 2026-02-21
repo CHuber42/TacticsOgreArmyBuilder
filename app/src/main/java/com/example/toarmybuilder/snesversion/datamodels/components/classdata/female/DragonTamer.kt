@@ -1,7 +1,7 @@
 package com.example.toarmybuilder.snesversion.datamodels.components.classdata.female
 
 import com.example.toarmybuilder.snesversion.datamodels.components.CharacterAlignment
-import com.example.toarmybuilder.snesversion.datamodels.components.ClassStats
+import com.example.toarmybuilder.snesversion.datamodels.components.CharacterClass
 import com.example.toarmybuilder.snesversion.datamodels.components.Element
 
 data class DragonTamer(
@@ -37,7 +37,7 @@ data class DragonTamer(
     override val body: String,
     override val accessory: String,
     override val characterAlignment: CharacterAlignment
-) : ClassStats(){
+) : CharacterClass(){
     init {
         super.setHpValid(180)
         super.setStrValid(115)

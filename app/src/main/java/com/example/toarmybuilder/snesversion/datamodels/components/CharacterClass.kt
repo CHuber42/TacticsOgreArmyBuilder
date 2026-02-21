@@ -1,6 +1,6 @@
 package com.example.toarmybuilder.snesversion.datamodels.components
 
-abstract class ClassStats() {
+abstract class CharacterClass() {
 
     abstract val characterAlignment : CharacterAlignment
     abstract val level: Int

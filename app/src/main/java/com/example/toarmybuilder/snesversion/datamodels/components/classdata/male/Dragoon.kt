@@ -1,7 +1,7 @@
 package com.example.toarmybuilder.snesversion.datamodels.components.classdata.male
 
 import com.example.toarmybuilder.snesversion.datamodels.components.CharacterAlignment
-import com.example.toarmybuilder.snesversion.datamodels.components.ClassStats
+import com.example.toarmybuilder.snesversion.datamodels.components.CharacterClass
 import com.example.toarmybuilder.snesversion.datamodels.components.Element
 
 data class Dragoon(
@@ -35,7 +35,7 @@ data class Dragoon(
     override val body: String,
     override val accessory: String,
     override val characterAlignment: CharacterAlignment
-) : ClassStats(){
+) : CharacterClass(){
     init {
         super.setAlignmentValid(characterAlignment)
         super.setStrValid(115)

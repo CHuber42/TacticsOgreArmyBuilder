@@ -1,7 +1,7 @@
 package com.example.toarmybuilder.snesversion.datamodels.components.classdata.female
 
 import com.example.toarmybuilder.snesversion.datamodels.components.CharacterAlignment
-import com.example.toarmybuilder.snesversion.datamodels.components.ClassStats
+import com.example.toarmybuilder.snesversion.datamodels.components.CharacterClass
 import com.example.toarmybuilder.snesversion.datamodels.components.Element
 
 class Archer(
@@ -36,7 +36,7 @@ class Archer(
     override val body: String,
     override val accessory: String,
     override val characterAlignment: CharacterAlignment
-) : ClassStats(){
+) : CharacterClass(){
     init {
         super.setVitValid(44)
         super.setAgiValid(44)
