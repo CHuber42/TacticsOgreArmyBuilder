@@ -20,6 +20,9 @@ fun CharacterLevelsColumn(
     Wallpaper(R.drawable.backgroundtexture2)
     val focusedCharacter : Character by snesVersionViewModel.focusedCharacter.collectAsState()
     val levels = focusedCharacter.levels
+    for (level in levels){
+        focusedCharacter.applyLevelUp(level)
+    }
     LazyColumn(
         horizontalAlignment = Alignment.CenterHorizontally
     ){
@@ -30,7 +33,6 @@ fun CharacterLevelsColumn(
         }
         itemsIndexed(levels){ index, item ->
             LevelRow(index, item)
-            focusedCharacter.applyLevelUp(item)
         }
     }
 }
