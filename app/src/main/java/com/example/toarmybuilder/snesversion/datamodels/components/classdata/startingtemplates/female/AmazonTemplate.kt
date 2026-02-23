@@ -16,4 +16,16 @@ object AmazonTemplate : StarterCharacterTemplate() {
     override val men: Int = 20
     override val sprite: Int = R.drawable.amazon1
     override val initialClass: CharacterClass = Jobs.Female.Amazon
+    override val classOptions: List<CharacterClass> =
+        listOf(
+            Jobs.Female.Amazon,
+            Jobs.Female.Archer,
+            Jobs.Female.Valkyrie,
+            Jobs.Female.Cleric,
+            Jobs.Female.Witch,
+            Jobs.Female.DragonTamer,
+            Jobs.Female.Siren,
+            Jobs.Female.Priest,
+            Jobs.Female.AngelKnight
+        )
 }

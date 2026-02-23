@@ -15,10 +15,20 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.toarmybuilder.snesversion.SnesVersionViewModel
 import com.example.toarmybuilder.snesversion.datamodels.components.CharacterClass
+import com.example.toarmybuilder.snesversion.datamodels.components.Jobs
+import com.example.toarmybuilder.snesversion.datamodels.components.classdata.CharacterFactory
 
 @Composable
-fun LevelRow(index: Int, LevelItem: CharacterClass){
+fun LevelRow(
+    index: Int,
+    focusedCharacter: CharacterFactory,
+    snesVersionViewModel: SnesVersionViewModel = viewModel()
+){
+    val classOptions = focusedCharacter.template.classOptions
+    val levelItem = focusedCharacter.levels[index]
     var expanded by rememberSaveable { mutableStateOf(false) }
     HorizontalDivider()
     Row(modifier = Modifier
@@ -28,10 +38,17 @@ fun LevelRow(index: Int, LevelItem: CharacterClass){
     ){
         Text((index + 1).toString()) // Add one for level display
         TextButton(onClick = {expanded = !expanded}) {
-            Text(LevelItem.name)
+            Text(levelItem.name)
             DropdownMenu(expanded = expanded, onDismissRequest = {expanded = false}) {
-                DropdownMenuItem(text = {Text(LevelItem.name)}, onClick = {expanded = false})
-                DropdownMenuItem(text = {Text("Dragoon")}, onClick = {expanded = false})
+                classOptions.forEach { option ->
+                    DropdownMenuItem(
+                        text = {Text(option.name)},
+                        onClick = {
+                            expanded = false
+                            snesVersionViewModel.updateCharacterLevels(index, option)
+                        } //TODO
+                    )
+                }
             }
         }
     }

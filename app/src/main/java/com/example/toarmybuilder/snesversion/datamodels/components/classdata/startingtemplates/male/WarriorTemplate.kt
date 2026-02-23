@@ -16,4 +16,19 @@ object WarriorTemplate : StarterCharacterTemplate() {
     override val men: Int = 20
     override val sprite: Int = R.drawable.malewarrior1
     override val initialClass: CharacterClass = Jobs.Male.Warrior
+    override val classOptions: List<CharacterClass> =
+        listOf(
+            Jobs.Male.Warrior,
+            Jobs.Male.Knight,
+            Jobs.Male.Berserker,
+            Jobs.Male.BeastTamer,
+            Jobs.Male.Exorcist,
+            Jobs.Male.Ninja,
+            Jobs.Male.Wizard,
+            Jobs.Male.Swordmaster,
+            Jobs.Male.Dragoon,
+            Jobs.Male.TerrorKnight,
+            Jobs.Male.Warlock,
+            Jobs.Male.Gunner,
+        )
 }

@@ -39,4 +39,11 @@ class SnesVersionViewModel : ViewModel() {
         val replacement = CharacterFactory(template = chosen.template, id = chosen.id, levels = chosen.levels)
         _focusedCharacter.value = replacement
     }
+    fun updateCharacterLevels(levelIndex: Int, levelType: CharacterClass){
+        val target = _focusedCharacter.value
+        val levelList = _focusedCharacter.value.levels.toMutableList()
+        levelList[levelIndex] = levelType
+        val replacement = CharacterFactory(template = target.template, id = target.id, levels = levelList)
+        _focusedCharacter.value = replacement
+    }
 }
