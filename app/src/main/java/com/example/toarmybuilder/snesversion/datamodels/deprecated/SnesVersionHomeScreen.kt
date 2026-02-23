@@ -1,4 +1,4 @@
-package com.example.toarmybuilder.snesversion
+package com.example.toarmybuilder.snesversion.datamodels.deprecated
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxHeight

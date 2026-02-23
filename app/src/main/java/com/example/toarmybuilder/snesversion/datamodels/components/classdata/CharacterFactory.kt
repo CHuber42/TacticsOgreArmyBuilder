@@ -16,6 +16,11 @@ class CharacterFactory(
     val levels: List<CharacterClass> = List<CharacterClass>(50){template.initialClass},
     val id: Int
 ) {
+    init {
+        for (level in levels){
+            applyLevelUp(level)
+        }
+    }
     fun applyLevelUp(classLevel: CharacterClass){
         this.hp += classLevel.hp
         this.mp += classLevel.mp
@@ -25,5 +30,6 @@ class CharacterFactory(
         this.dex += classLevel.dex
         this.int += classLevel.int
         this.men += classLevel.men
+        this.sprite = classLevel.sprite // TODO: If sprite changeable
     }
 }

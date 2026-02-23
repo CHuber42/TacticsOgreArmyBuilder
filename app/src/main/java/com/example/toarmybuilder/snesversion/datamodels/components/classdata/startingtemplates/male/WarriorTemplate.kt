@@ -1,11 +1,11 @@
-package com.example.toarmybuilder.snesversion.datamodels.components.classdata.male
+package com.example.toarmybuilder.snesversion.datamodels.components.classdata.startingtemplates.male
 
-import com.example.toarmybuilder.snesversion.datamodels.components.CharacterClass
-import com.example.toarmybuilder.snesversion.datamodels.components.classdata.StarterCharacterTemplate
 import com.example.toarmybuilder.R
+import com.example.toarmybuilder.snesversion.datamodels.components.CharacterClass
 import com.example.toarmybuilder.snesversion.datamodels.components.Jobs
+import com.example.toarmybuilder.snesversion.datamodels.components.classdata.StarterCharacterTemplate
 
-object NewWarriorTemplate : StarterCharacterTemplate() {
+object WarriorTemplate : StarterCharacterTemplate() {
     override val hp: Int = 40
     override val mp: Int = 20
     override val str: Int = 20

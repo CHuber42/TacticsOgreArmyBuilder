@@ -11,7 +11,6 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.toarmybuilder.R
 import com.example.toarmybuilder.snesversion.SnesVersionViewModel
 import com.example.toarmybuilder.utilities.Wallpaper
-import com.example.toarmybuilder.snesversion.datamodels.Character
 import com.example.toarmybuilder.snesversion.datamodels.components.classdata.CharacterFactory
 
 @Composable
@@ -21,17 +20,9 @@ fun CharacterLevelsColumn(
     Wallpaper(R.drawable.backgroundtexture2)
     val focusedCharacter : CharacterFactory by snesVersionViewModel.focusedCharacter.collectAsState()
     val levels = focusedCharacter.levels
-    for (level in levels){
-        focusedCharacter.applyLevelUp(level)
-    }
     LazyColumn(
         horizontalAlignment = Alignment.CenterHorizontally
     ){
-//        if(focusedCharacter.creatureTypeSelectable){
-//            item{
-//                ClassTypeSelect()
-//            }
-//        } //todo
         itemsIndexed(levels){ index, item ->
             LevelRow(index, item)
         }
