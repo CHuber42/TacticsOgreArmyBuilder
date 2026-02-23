@@ -1,6 +1,5 @@
 package com.example.toarmybuilder
 
-import android.util.Log
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -8,7 +7,7 @@ import androidx.navigation.compose.rememberNavController
 import com.example.toarmybuilder.luctversion.LuctVersionHomeScreen
 import com.example.toarmybuilder.navigationaccessories.*
 import com.example.toarmybuilder.rebornversion.RebornVersionHomeScreen
-import com.example.toarmybuilder.snesversion.SnesVersionHomeScreen
+import com.example.toarmybuilder.snesversion.datamodels.deprecated.SnesVersionHomeScreen
 
 @Composable
 fun MainActivityNavController() {

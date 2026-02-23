@@ -11,12 +11,12 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.toarmybuilder.snesversion.SnesVersionViewModel
-import com.example.toarmybuilder.snesversion.datamodels.Character
+import com.example.toarmybuilder.snesversion.datamodels.components.classdata.CharacterFactory
 
 @Composable
 fun ArmyPreviewSelectable(
     armyPreviewSelectableModifier: Modifier,
-    listItem: Character,
+    listItem: CharacterFactory,
     snesVersionViewModel: SnesVersionViewModel = viewModel()
 ){
     Box(modifier = armyPreviewSelectableModifier,
@@ -29,9 +29,9 @@ fun ArmyPreviewSelectable(
             contentScale = ContentScale.None
         )
         TextButton(
-            onClick = {snesVersionViewModel.setFocusedCharacter(listItem.Id)}
+            onClick = {snesVersionViewModel.setFocusedCharacter(listItem.id)}
         ){
-            Text(listItem.Id.toString())
+            Text(listItem.id.toString())
         }
     }
 }

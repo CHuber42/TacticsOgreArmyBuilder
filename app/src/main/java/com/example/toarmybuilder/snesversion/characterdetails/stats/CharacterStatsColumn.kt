@@ -14,14 +14,14 @@ import androidx.compose.ui.res.painterResource
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.toarmybuilder.R
 import com.example.toarmybuilder.snesversion.SnesVersionViewModel
-import com.example.toarmybuilder.snesversion.datamodels.Character
+import com.example.toarmybuilder.snesversion.datamodels.components.classdata.CharacterFactory
 import com.example.toarmybuilder.utilities.Wallpaper
 
 @Composable
 fun CharacterStatsColumn(
     snesVersionViewModel: SnesVersionViewModel = viewModel()
 ){
-    val focusedCharacter : Character by snesVersionViewModel.focusedCharacter.collectAsState()
+    val focusedCharacter : CharacterFactory by snesVersionViewModel.focusedCharacter.collectAsState()
 
     Wallpaper(R.drawable.backgroundtexture2)
 
@@ -32,14 +32,14 @@ fun CharacterStatsColumn(
         verticalArrangement = Arrangement.SpaceAround
     ){
 
-        TitleRow(focusedCharacter.name, focusedCharacter.Id, focusedCharacter.creatureType)
+//        TitleRow(focusedCharacter.name, focusedCharacter.Id, focusedCharacter.creatureType)
 
         Image(
             painter = painterResource(id = focusedCharacter.sprite),
             contentDescription = null,
             contentScale = ContentScale.None
         )
-        StatRow(statLabel = "Class", statValue = focusedCharacter.characterClass.name) // TODO
+//        StatRow(statLabel = "Class", statValue = focusedCharacter.characterClass.name) // TODO
 //        StatRow(statLabel = "Level", statValue = "L / N / C") // TODO
         StatRow(statLabel = "Ali", statValue = "L / N / C") // TODO
         StatRow(statLabel = "HP", statValue = focusedCharacter.hp.toString())
