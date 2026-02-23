@@ -22,7 +22,6 @@ fun ArmyPreviewSelectable(
     Box(modifier = armyPreviewSelectableModifier,
         contentAlignment = Alignment.Center
         ){
-        // Denim Sprite // todo
         Image(
             painter = painterResource(id = listItem.sprite),
             contentDescription = null,
