@@ -2,7 +2,7 @@ package com.example.toarmybuilder.snesversion.datamodels.components.classdata
 
 import com.example.toarmybuilder.snesversion.datamodels.components.CharacterClass
 
-class CharacterFactory(
+data class CharacterFactory(
     val template: StarterCharacterTemplate,
     var hp: Int = template.hp,
     var mp: Int = template.mp,

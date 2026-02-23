@@ -46,7 +46,7 @@ fun LevelRow(
                         onClick = {
                             expanded = false
                             snesVersionViewModel.updateCharacterLevels(index, option)
-                        } //TODO
+                        }
                     )
                 }
             }

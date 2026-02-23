@@ -14,6 +14,7 @@ import com.example.toarmybuilder.utilities.Wallpaper
 fun ArmyPreviewContainer(
     viewModel: SnesVersionViewModel = viewModel()
 ){
+    val armyList = viewModel.armyList
     Wallpaper(R.drawable.backgroundtexture1)
     // Contents of Army Preview
     Column(modifier = Modifier.fillMaxSize()){
@@ -24,6 +25,5 @@ fun ArmyPreviewContainer(
 
         ArmyPreviewRow(armyPreviewRowModifier, viewModel.armyList.subList(0, 5)) //todo: Pagination
         ArmyPreviewRow(armyPreviewRowModifier, viewModel.armyList.subList(5, 10))
-
     }
 }
