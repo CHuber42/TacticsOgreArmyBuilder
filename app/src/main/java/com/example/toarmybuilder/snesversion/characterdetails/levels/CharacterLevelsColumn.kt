@@ -12,13 +12,14 @@ import com.example.toarmybuilder.R
 import com.example.toarmybuilder.snesversion.SnesVersionViewModel
 import com.example.toarmybuilder.utilities.Wallpaper
 import com.example.toarmybuilder.snesversion.datamodels.Character
+import com.example.toarmybuilder.snesversion.datamodels.components.classdata.CharacterFactory
 
 @Composable
 fun CharacterLevelsColumn(
     snesVersionViewModel: SnesVersionViewModel = viewModel()
 ){
     Wallpaper(R.drawable.backgroundtexture2)
-    val focusedCharacter : Character by snesVersionViewModel.focusedCharacter.collectAsState()
+    val focusedCharacter : CharacterFactory by snesVersionViewModel.focusedCharacter.collectAsState()
     val levels = focusedCharacter.levels
     for (level in levels){
         focusedCharacter.applyLevelUp(level)
@@ -26,11 +27,11 @@ fun CharacterLevelsColumn(
     LazyColumn(
         horizontalAlignment = Alignment.CenterHorizontally
     ){
-        if(focusedCharacter.creatureTypeSelectable){
-            item{
-                ClassTypeSelect()
-            }
-        }
+//        if(focusedCharacter.creatureTypeSelectable){
+//            item{
+//                ClassTypeSelect()
+//            }
+//        } //todo
         itemsIndexed(levels){ index, item ->
             LevelRow(index, item)
         }

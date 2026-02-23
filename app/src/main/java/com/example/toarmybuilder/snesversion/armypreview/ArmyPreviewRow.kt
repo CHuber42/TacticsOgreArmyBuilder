@@ -5,11 +5,12 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import com.example.toarmybuilder.snesversion.datamodels.Character
+import com.example.toarmybuilder.snesversion.datamodels.components.classdata.CharacterFactory
 
 @Composable
 fun ArmyPreviewRow(
     armyPreviewRowModifier: Modifier,
-    subList: List<Character>
+    subList: List<CharacterFactory>
 ){
     LazyRow(modifier = armyPreviewRowModifier
     ){
