@@ -7,7 +7,7 @@ import androidx.navigation.compose.rememberNavController
 import com.example.toarmybuilder.luctversion.LuctVersionHomeScreen
 import com.example.toarmybuilder.navigationaccessories.*
 import com.example.toarmybuilder.rebornversion.RebornVersionHomeScreen
-import com.example.toarmybuilder.snesversion.datamodels.deprecated.SnesVersionHomeScreen
+import com.example.toarmybuilder.snesversion.SnesVersionHomeScreen
 
 @Composable
 fun MainActivityNavController() {
