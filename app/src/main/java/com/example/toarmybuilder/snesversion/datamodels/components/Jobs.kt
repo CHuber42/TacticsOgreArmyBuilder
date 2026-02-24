@@ -2,14 +2,20 @@ package com.example.toarmybuilder.snesversion.datamodels.components
 
 import com.example.toarmybuilder.snesversion.datamodels.components.classdata.monster.MonsterJobs
 import com.example.toarmybuilder.snesversion.datamodels.components.classdata.demihuman.DemihumanJobs
+import com.example.toarmybuilder.snesversion.datamodels.components.classdata.dragon.DragonJobs
 import com.example.toarmybuilder.snesversion.datamodels.components.classdata.female.FemaleJobs
 import com.example.toarmybuilder.snesversion.datamodels.components.classdata.male.MaleJobs
+import com.example.toarmybuilder.snesversion.datamodels.components.classdata.undead.UndeadJobs
+import com.example.toarmybuilder.snesversion.datamodels.components.classdata.unique.UniqueJobs
 
 object Jobs {
     val Male = MaleJobs
     val Female = FemaleJobs
     val DemiHuman = DemihumanJobs
     val Monster = MonsterJobs
+    val Undead = UndeadJobs
+    val Dragon = DragonJobs
+    val Unique = UniqueJobs
 }
 //
 //
