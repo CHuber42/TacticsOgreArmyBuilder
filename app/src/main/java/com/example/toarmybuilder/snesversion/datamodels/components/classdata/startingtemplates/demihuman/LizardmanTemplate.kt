@@ -5,21 +5,21 @@ import com.example.toarmybuilder.snesversion.datamodels.components.CharacterClas
 import com.example.toarmybuilder.snesversion.datamodels.components.Jobs
 import com.example.toarmybuilder.snesversion.datamodels.components.classdata.StarterCharacterTemplate
 
-object FaerieTemplate : StarterCharacterTemplate() {
-    override val hp: Int = 72
+object LizardmanTemplate : StarterCharacterTemplate() {
+    override val hp: Int = 64
     override val mp: Int = 0
-    override val str: Int = 34
-    override val vit: Int = 34
-    override val int: Int = 33
-    override val men: Int = 3
-    override val agi: Int = 13
-    override val dex: Int = 8
+    override val str: Int = 20
+    override val vit: Int = 20
+    override val int: Int = 22
+    override val men: Int = 18
+    override val agi: Int = 24
+    override val dex: Int = 16
 
-    override val sprite: Int = R.drawable.malewarrior1 //TODO correct sprite
-    override val initialClass: CharacterClass = Jobs.DemiHuman.Faerie
+    override val sprite: Int = R.drawable.malewarrior1 // TODO correct sprite
+    override val initialClass: CharacterClass = Jobs.DemiHuman.Lizardman
 
     override val classOptions: List<CharacterClass> =
         listOf(
-            Jobs.DemiHuman.Faerie
+            Jobs.DemiHuman.Lizardman
         )
 }

@@ -1,28 +1,28 @@
-package com.example.toarmybuilder.snesversion.datamodels.components.classdata.demihuman
+package com.example.toarmybuilder.snesversion.datamodels.components.classdata.beast
 
 import com.example.toarmybuilder.R
 import com.example.toarmybuilder.snesversion.datamodels.components.CharacterAlignment
 import com.example.toarmybuilder.snesversion.datamodels.components.CharacterClass
 import com.example.toarmybuilder.snesversion.datamodels.components.Element
 
-object Faerie : CharacterClass() {
+object Cockatrice : CharacterClass() {
     // Title Attributes
-    override val name: String = "Faerie"
-    override val sprite : Int = R.drawable.malewarrior1 // TODO
+    override val name: String = "Cockatrice"
+    override val sprite : Int = R.drawable.malewarrior1 //todo correct sprite
 
     // Stat Growths
-    override val hp: Int = 5
+    override val hp: Int = 9
     override val mp: Int = 0
-    override val str: Int = 3
-    override val vit: Int = 2
+    override val str: Int = 7
+    override val vit: Int = 4
     override val int: Int = 3
-    override val men: Int = 7
-    override val agi: Int = 6
-    override val dex: Int = 7
+    override val men: Int = 4
+    override val agi: Int = 3
+    override val dex: Int = 4
 
     // Constant Stats
-    override val wt: Int = -10
-    override val movement: Int = 5
+    override val movement: Int = 7
+    override val wt: Int = 40
 
     // Alignment and Element Attributes
     override val acceptableCharacterAlignment: List<CharacterAlignment> = listOf(
