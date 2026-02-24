@@ -1,4 +1,4 @@
-package com.example.toarmybuilder.snesversion.datamodels.components.classdata.startingtemplates.beast
+package com.example.toarmybuilder.snesversion.datamodels.components.classdata.startingtemplates.monster
 
 import com.example.toarmybuilder.R
 import com.example.toarmybuilder.snesversion.datamodels.components.CharacterClass
@@ -16,10 +16,10 @@ object GryphonTemplate : StarterCharacterTemplate() {
     override val dex: Int = 12
 
     override val sprite: Int = R.drawable.malewarrior1 // TODO correct sprite
-    override val initialClass: CharacterClass = Jobs.Beast.Gryphon
+    override val initialClass: CharacterClass = Jobs.Monster.Gryphon
 
     override val classOptions: List<CharacterClass> =
         listOf(
-            Jobs.Beast.Gryphon
+            Jobs.Monster.Gryphon
         )
 }
