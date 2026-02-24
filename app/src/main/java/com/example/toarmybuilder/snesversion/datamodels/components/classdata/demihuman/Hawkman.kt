@@ -1,30 +1,32 @@
-package com.example.toarmybuilder.snesversion.datamodels.components.classdata.male
+package com.example.toarmybuilder.snesversion.datamodels.components.classdata.demihuman
 
+import com.example.toarmybuilder.R
 import com.example.toarmybuilder.snesversion.datamodels.components.CharacterAlignment
 import com.example.toarmybuilder.snesversion.datamodels.components.CharacterClass
 import com.example.toarmybuilder.snesversion.datamodels.components.Element
-import com.example.toarmybuilder.R
-object Berserker : CharacterClass(){
+
+object Hawkman : CharacterClass() {
     // Title Attributes
-    override val name = "Berserker"
-    override val sprite: Int = R.drawable.maleberzerker1
+    override val name: String = "Hawkman"
+    override val sprite : Int = R.drawable.malewarrior1
 
     // Stat Growths
-    override val hp: Int = 9
-    override val mp: Int = 1
-    override val str: Int = 6
-    override val vit: Int = 5
-    override val dex: Int = 5
-    override val agi: Int = 4
-    override val int: Int = 3
-    override val men: Int = 6
+    override val hp: Int = 7
+    override val mp: Int = 3
+    override val str: Int = 5
+    override val vit: Int = 3
+    override val int: Int = 5
+    override val men: Int = 5
+    override val agi: Int = 6
+    override val dex: Int = 6
 
     // Constant Stats
-    override val movement: Int = 5
-    override val wt: Int = 5
-    
+    override val movement: Int = 6
+    override val wt: Int = 0
+
     // Alignment and Element Attributes
     override val acceptableCharacterAlignment: List<CharacterAlignment> = listOf(
+        CharacterAlignment.LAWFUL,
         CharacterAlignment.NEUTRAL,
         CharacterAlignment.CHAOTIC
     )
@@ -35,16 +37,9 @@ object Berserker : CharacterClass(){
         Element.FIRE
     )
 
-     // Movement Modifiers
-    override val fly: Boolean = false
+    // Movement Modifiers
+    override val fly: Boolean = true
     override val teleport: Boolean = false
     override val walkInWater: Boolean = false
     override val walkOnLava: Boolean = false
-
-//    init {
-//        super.setAlignmentValid(characterAlignment)
-//        super.setStrValid(45)
-//        super.setVitValid(46)
-//        super.setDexValid(44)
-//    }
 }

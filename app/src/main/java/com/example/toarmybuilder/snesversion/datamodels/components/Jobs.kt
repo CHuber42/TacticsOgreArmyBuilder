@@ -1,11 +1,13 @@
 package com.example.toarmybuilder.snesversion.datamodels.components
 
+import com.example.toarmybuilder.snesversion.datamodels.components.classdata.demihuman.DemihumanJobs
 import com.example.toarmybuilder.snesversion.datamodels.components.classdata.female.FemaleJobs
 import com.example.toarmybuilder.snesversion.datamodels.components.classdata.male.MaleJobs
 
 object Jobs {
     val Male = MaleJobs
     val Female = FemaleJobs
+    val DemiHuman = DemihumanJobs
 }
 //
 //
