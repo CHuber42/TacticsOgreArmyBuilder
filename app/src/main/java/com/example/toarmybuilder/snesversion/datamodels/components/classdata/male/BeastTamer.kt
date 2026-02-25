@@ -14,7 +14,7 @@ object BeastTamer : CharacterClass(){
 
     // Title Attributes
     override val name: String = "BeastTamer"
-    override val sprite : Int = R.drawable.malebeastmaster1
+    override val sprite : Int = R.drawable.male_beasttamer1
 
     // Stat Growths
     override val hp: Int = 8

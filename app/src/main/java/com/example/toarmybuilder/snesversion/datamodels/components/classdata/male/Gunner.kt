@@ -8,7 +8,7 @@ import com.example.toarmybuilder.R
 object Gunner : CharacterClass(){
     // Title Attributes
     override val name : String = "Gunner"
-    override val sprite : Int = R.drawable.malefusilier1
+    override val sprite : Int = R.drawable.female_fusilier
 
     // Stat Growths
     override val hp: Int = 6

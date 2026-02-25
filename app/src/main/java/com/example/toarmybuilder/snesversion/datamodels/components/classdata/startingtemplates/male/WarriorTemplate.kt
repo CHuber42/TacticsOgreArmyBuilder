@@ -5,9 +5,9 @@ import com.example.toarmybuilder.snesversion.datamodels.components.CharacterClas
 import com.example.toarmybuilder.snesversion.datamodels.components.Jobs
 import com.example.toarmybuilder.snesversion.datamodels.components.classdata.StarterCharacterTemplate
 
-object WarriorTemplate : StarterCharacterTemplate() {
-    override val sprite: Int = R.drawable.malewarrior1
-    override val initialClass: CharacterClass = Jobs.Male.Warrior
+object SoldierTemplate : StarterCharacterTemplate() {
+    override val sprite: Int = R.drawable.template1
+    override val initialClass: CharacterClass = Jobs.Male.Soldier
 
     override val hp: Int = 60
     override val mp: Int = 0
@@ -19,7 +19,7 @@ object WarriorTemplate : StarterCharacterTemplate() {
     override val dex: Int = 20
     override val classOptions: List<CharacterClass> =
         listOf(
-            Jobs.Male.Warrior,
+            Jobs.Male.Soldier,
             Jobs.Male.Knight,
             Jobs.Male.Berserker,
             Jobs.Male.BeastTamer,

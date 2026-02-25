@@ -15,7 +15,7 @@ object GryphonTemplate : StarterCharacterTemplate() {
     override val agi: Int = 8
     override val dex: Int = 12
 
-    override val sprite: Int = R.drawable.malewarrior1 // TODO correct sprite
+    override val sprite: Int = R.drawable.template1 // TODO correct sprite
     override val initialClass: CharacterClass = Jobs.Monster.Gryphon
 
     override val classOptions: List<CharacterClass> =

@@ -8,7 +8,7 @@ import com.example.toarmybuilder.snesversion.datamodels.components.Element
 object Pumpkinhead : CharacterClass() {
     // Title Attributes
     override val name: String = "Pumpkinhead"
-    override val sprite : Int = R.drawable.malewarrior1 // ToDO: Correct sprite
+    override val sprite : Int = R.drawable.demi_pumpkinhead1
 
     // Stat Growths
     override val hp: Int = 4

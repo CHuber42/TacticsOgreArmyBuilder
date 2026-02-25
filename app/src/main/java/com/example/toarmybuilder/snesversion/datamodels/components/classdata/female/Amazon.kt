@@ -9,7 +9,7 @@ object Amazon : CharacterClass(){
 
     // Title Attributes
     override val name: String = "Amazon"
-    override val sprite: Int = R.drawable.amazon1
+    override val sprite: Int = R.drawable.female_amazon1
 
     // Stat Growths
     override val hp: Int = 7

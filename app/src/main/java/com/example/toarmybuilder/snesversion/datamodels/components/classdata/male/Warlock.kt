@@ -8,7 +8,7 @@ import com.example.toarmybuilder.R
 object Warlock: CharacterClass(){
     // Title Attributes
     override val name : String = "Warlock"
-    override val sprite : Int = R.drawable.malewarlock1
+    override val sprite : Int = R.drawable.male_warlock1
 
     // Stat Growths
     override val hp: Int = 5

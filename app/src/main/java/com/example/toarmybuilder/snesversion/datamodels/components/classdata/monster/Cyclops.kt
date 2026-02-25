@@ -8,7 +8,7 @@ import com.example.toarmybuilder.snesversion.datamodels.components.Element
 object Cyclops : CharacterClass() {
     // Title Attributes
     override val name: String = "Cyclops"
-    override val sprite : Int = R.drawable.malewarrior1 //todo correct sprite
+    override val sprite : Int = R.drawable.monster_cyclops1
 
     // Stat Growths
     override val hp: Int = 8

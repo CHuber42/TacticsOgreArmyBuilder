@@ -14,7 +14,7 @@ object Archer : CharacterClass(){
 
     // Title Attributes
     override val name : String = "Archer"
-    override val sprite: Int = R.drawable.femalearcher1
+    override val sprite: Int = R.drawable.female_archer1
 
     // Stat Growths
     override val hp: Int = 7

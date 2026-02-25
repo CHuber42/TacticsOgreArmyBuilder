@@ -15,7 +15,7 @@ object LizardmanTemplate : StarterCharacterTemplate() {
     override val agi: Int = 24
     override val dex: Int = 16
 
-    override val sprite: Int = R.drawable.malewarrior1 // TODO correct sprite
+    override val sprite: Int = R.drawable.template1 // TODO correct sprite
     override val initialClass: CharacterClass = Jobs.DemiHuman.Lizardman
 
     override val classOptions: List<CharacterClass> =

@@ -10,14 +10,14 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import com.example.toarmybuilder.snesversion.datamodels.components.classdata.CharacterFactory
 import com.example.toarmybuilder.snesversion.datamodels.components.classdata.startingtemplates.female.AmazonTemplate
-import com.example.toarmybuilder.snesversion.datamodels.components.classdata.startingtemplates.male.WarriorTemplate
+import com.example.toarmybuilder.snesversion.datamodels.components.classdata.startingtemplates.male.SoldierTemplate
 
 val starterArmy = listOf(
-    CharacterFactory(template = WarriorTemplate, id = 1),
-    CharacterFactory(template = WarriorTemplate, id = 2),
-    CharacterFactory(template = WarriorTemplate, id = 3),
-    CharacterFactory(template = WarriorTemplate, id = 4),
-    CharacterFactory(template = WarriorTemplate, id = 5),
+    CharacterFactory(template = SoldierTemplate, id = 1),
+    CharacterFactory(template = SoldierTemplate, id = 2),
+    CharacterFactory(template = SoldierTemplate, id = 3),
+    CharacterFactory(template = SoldierTemplate, id = 4),
+    CharacterFactory(template = SoldierTemplate, id = 5),
     CharacterFactory(template = AmazonTemplate, id = 6),
     CharacterFactory(template = AmazonTemplate, id = 7),
     CharacterFactory(template = AmazonTemplate, id = 8),

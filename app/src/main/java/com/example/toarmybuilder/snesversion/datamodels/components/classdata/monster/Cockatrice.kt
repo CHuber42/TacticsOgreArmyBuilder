@@ -8,7 +8,7 @@ import com.example.toarmybuilder.snesversion.datamodels.components.Element
 object Cockatrice : CharacterClass() {
     // Title Attributes
     override val name: String = "Cockatrice"
-    override val sprite : Int = R.drawable.malewarrior1 //todo correct sprite
+    override val sprite : Int = R.drawable.monster_cockatrice1
 
     // Stat Growths
     override val hp: Int = 9

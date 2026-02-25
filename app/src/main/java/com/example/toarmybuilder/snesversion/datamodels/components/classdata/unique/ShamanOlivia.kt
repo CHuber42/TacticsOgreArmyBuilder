@@ -8,7 +8,7 @@ import com.example.toarmybuilder.snesversion.datamodels.components.Element
 object ShamanOlivia : CharacterClass() {
     // Title Attributes
     override val name: String = "Shaman"
-    override val sprite : Int = R.drawable.malewarrior1 //todo correct sprite
+    override val sprite : Int = R.drawable.unique_waterolivia1
 
     // Stat Growths
     override val hp: Int = 5
@@ -29,7 +29,7 @@ object ShamanOlivia : CharacterClass() {
         CharacterAlignment.LAWFUL
     )
     override val acceptableElement: List<Element> = listOf(
-        Element.FIRE // todo verify
+        Element.WATER // todo verify
     )
 
     // Movement Modifiers
