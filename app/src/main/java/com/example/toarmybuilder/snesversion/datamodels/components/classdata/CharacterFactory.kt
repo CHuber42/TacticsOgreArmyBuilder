@@ -13,6 +13,7 @@ data class CharacterFactory(
     var int: Int = template.int,
     var men: Int = template.men,
     var sprite: Int = template.sprite,
+    val spriteChangeable : Boolean = template.spriteChangeable,
     val levels: List<CharacterClass> = List<CharacterClass>(50){template.initialClass},
     val id: Int
 ) {
@@ -30,6 +31,7 @@ data class CharacterFactory(
         this.dex += classLevel.dex
         this.int += classLevel.int
         this.men += classLevel.men
-        this.sprite = classLevel.sprite // TODO: If sprite changeable
+
+        if (this.spriteChangeable) this.sprite = classLevel.sprite
     }
 }

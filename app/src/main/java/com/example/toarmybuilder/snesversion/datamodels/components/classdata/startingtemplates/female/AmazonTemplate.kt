@@ -6,6 +6,7 @@ import com.example.toarmybuilder.snesversion.datamodels.components.Jobs
 import com.example.toarmybuilder.snesversion.datamodels.components.classdata.StarterCharacterTemplate
 
 object AmazonTemplate : StarterCharacterTemplate() {
+    override val sprite: Int = R.drawable.female_amazon1
 
     override val hp: Int = 58
     override val mp: Int = 0
@@ -16,7 +17,6 @@ object AmazonTemplate : StarterCharacterTemplate() {
     override val agi: Int = 20
     override val dex: Int = 23
 
-    override val sprite: Int = R.drawable.template1
     override val initialClass: CharacterClass = Jobs.Female.Amazon
     override val classOptions: List<CharacterClass> =
         listOf(

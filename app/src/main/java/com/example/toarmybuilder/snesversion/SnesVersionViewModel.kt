@@ -12,7 +12,7 @@ import com.example.toarmybuilder.snesversion.datamodels.components.classdata.sta
 import com.example.toarmybuilder.snesversion.datamodels.components.classdata.startingtemplates.male.SoldierTemplate
 
 val starterArmy = listOf(
-    CharacterFactory(template = SoldierTemplate, id = 1),
+    CharacterFactory(template = SoldierTemplate, id = 1, spriteChangeable = false),
     CharacterFactory(template = SoldierTemplate, id = 2),
     CharacterFactory(template = SoldierTemplate, id = 3),
     CharacterFactory(template = SoldierTemplate, id = 4),
@@ -40,7 +40,7 @@ class SnesVersionViewModel : ViewModel() {
         val source = focusedCharacter.value
         val sourceLevels = focusedCharacter.value.levels.toMutableList()
         sourceLevels[levelIndex] = levelType
-        val replacement = CharacterFactory(template = source.template, id = source.id, levels = sourceLevels)
+        val replacement = CharacterFactory(template = source.template, id = source.id, levels = sourceLevels, spriteChangeable = source.spriteChangeable)
         _focusedCharacter.value = replacement
         _armyList.replaceAll {if (it.id == replacement.id) replacement else it}
     }
