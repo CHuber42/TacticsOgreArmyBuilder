@@ -8,8 +8,8 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import com.example.toarmybuilder.snesversion.datamodels.components.classdata.CharacterFactory
-import com.example.toarmybuilder.snesversion.datamodels.components.classdata.startingtemplates.female.AmazonTemplate
-import com.example.toarmybuilder.snesversion.datamodels.components.classdata.startingtemplates.male.SoldierTemplate
+import com.example.toarmybuilder.snesversion.datamodels.components.classdata.charactertemplates.female.AmazonTemplate
+import com.example.toarmybuilder.snesversion.datamodels.components.classdata.charactertemplates.male.SoldierTemplate
 
 val starterArmy = listOf(
     CharacterFactory(template = SoldierTemplate, id = 1, spriteChangeable = false),

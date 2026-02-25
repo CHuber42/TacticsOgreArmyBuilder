@@ -1,4 +1,4 @@
-package com.example.toarmybuilder.snesversion.datamodels.components.classdata.startingtemplates.unique
+package com.example.toarmybuilder.snesversion.datamodels.components.classdata.charactertemplates.unique
 
 import com.example.toarmybuilder.R
 import com.example.toarmybuilder.snesversion.datamodels.components.CharacterAlignment
@@ -7,25 +7,23 @@ import com.example.toarmybuilder.snesversion.datamodels.components.Element
 import com.example.toarmybuilder.snesversion.datamodels.components.Jobs
 import com.example.toarmybuilder.snesversion.datamodels.components.classdata.StarterCharacterTemplate
 
-object ViceTemplate : StarterCharacterTemplate() {
-    // TODO: Possibly Changeable based on recruitment in later chapter?
-    override val sprite: Int = R.drawable.unique_vice1
-    override val spriteChangeable: Boolean = false
-    override val initialLevel: Int = 2
-    override val element: Element = Element.WATER // TODO Changeable?
-    override val alignment: CharacterAlignment = CharacterAlignment.NEUTRAL // TODO Changeable?
+object VoltelTemplate : StarterCharacterTemplate() {
+    override val sprite: Int = R.drawable.male_knight1
+    override val spriteChangeable: Boolean = true
+    override val initialLevel: Int = 5
+    override val element: Element = Element.FIRE
+    override val alignment: CharacterAlignment = CharacterAlignment.LAWFUL
 
-    override val hp: Int = 78
-    override val mp: Int = 9
-    override val str: Int = 35
-    override val vit: Int = 32
-    override val int: Int = 34
-    override val men: Int = 32
-    override val agi: Int = 29
-    override val dex: Int = 34
-    override val luk: Int = 55
+    override val hp: Int = 92
+    override val mp: Int = 16
+    override val str: Int = 45
+    override val vit: Int = 40
+    override val int: Int = 42
+    override val men: Int = 42
+    override val agi: Int = 44
+    override val dex: Int = 44
 
-    override val initialClass: CharacterClass = Jobs.Male.Soldier
+    override val initialClass: CharacterClass = Jobs.Male.Knight
     override val classOptions: List<CharacterClass> =
         listOf(
             Jobs.Male.Soldier,

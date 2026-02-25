@@ -1,11 +1,12 @@
-package com.example.toarmybuilder.snesversion.datamodels.components.classdata.startingtemplates.unique
+package com.example.toarmybuilder.snesversion.datamodels.components.classdata.charactertemplates.unique
 
 import com.example.toarmybuilder.R
 import com.example.toarmybuilder.snesversion.datamodels.components.CharacterClass
 import com.example.toarmybuilder.snesversion.datamodels.components.Jobs
 import com.example.toarmybuilder.snesversion.datamodels.components.classdata.StarterCharacterTemplate
 
-object ByanTemplate : StarterCharacterTemplate() {
+object MildainTemplate : StarterCharacterTemplate() {
+    // TODO: Possibly Changeable based on recruitment in later chapter?
     override val sprite: Int = R.drawable.unique_denim1
     override val spriteChangeable: Boolean = false
 

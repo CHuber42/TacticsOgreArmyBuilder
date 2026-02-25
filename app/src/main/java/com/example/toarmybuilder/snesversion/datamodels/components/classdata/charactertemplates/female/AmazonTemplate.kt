@@ -1,4 +1,4 @@
-package com.example.toarmybuilder.snesversion.datamodels.components.classdata.startingtemplates.female
+package com.example.toarmybuilder.snesversion.datamodels.components.classdata.charactertemplates.female
 
 import com.example.toarmybuilder.R
 import com.example.toarmybuilder.snesversion.datamodels.components.CharacterClass

@@ -14,6 +14,7 @@ object UniqueJobs {
     val Sisteena = ShamanSisteena
     val Selye = ShamanSelye
     val Lich = com.example.toarmybuilder.snesversion.datamodels.components.classdata.unique.Lich
+    val HighPriest = com.example.toarmybuilder.snesversion.datamodels.components.classdata.unique.HighPriest
 }
 
 // TODO templates: Guildus, Mildain, Vice, Lord, Princess, Eagle Man, Beast Master, Sorceress, Shaman-Sisteena ->
