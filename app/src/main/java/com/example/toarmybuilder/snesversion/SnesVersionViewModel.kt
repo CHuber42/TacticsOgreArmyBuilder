@@ -1,6 +1,5 @@
 package com.example.toarmybuilder.snesversion
 
-import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.toMutableStateList
 import androidx.lifecycle.ViewModel
 import com.example.toarmybuilder.snesversion.datamodels.components.CharacterClass
@@ -22,7 +21,7 @@ val starterArmy = listOf(
     CharacterFactory(template = AmazonTemplate, id = 7),
     CharacterFactory(template = AmazonTemplate, id = 8),
     CharacterFactory(template = AmazonTemplate, id = 9),
-    CharacterFactory(template = AmazonTemplate, id = 10)
+    CharacterFactory(template = AmazonTemplate, id = 10, levels = List<CharacterClass>(2){ Jobs.Dragon.BlackDragon})
 )
 class SnesVersionViewModel : ViewModel() {
 
