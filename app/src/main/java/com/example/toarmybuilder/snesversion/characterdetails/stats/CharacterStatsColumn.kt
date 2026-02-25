@@ -3,7 +3,9 @@ package com.example.toarmybuilder.snesversion.characterdetails.stats
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
@@ -35,9 +37,10 @@ fun CharacterStatsColumn(
 //        TitleRow(focusedCharacter.name, focusedCharacter.Id, focusedCharacter.creatureType)
 
         Image(
+            modifier = Modifier.fillMaxHeight(0.15F).fillMaxWidth(),
             painter = painterResource(id = focusedCharacter.sprite),
             contentDescription = null,
-            contentScale = ContentScale.None
+            contentScale = ContentScale.Fit
         )
 //        StatRow(statLabel = "Class", statValue = focusedCharacter.characterClass.name) // TODO
 //        StatRow(statLabel = "Level", statValue = "L / N / C") // TODO

@@ -2,6 +2,7 @@ package com.example.toarmybuilder.snesversion.armypreview
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
@@ -22,16 +23,17 @@ fun ArmyPreviewSelectable(
     Box(modifier = armyPreviewSelectableModifier,
         contentAlignment = Alignment.Center
         ){
-        // Denim Sprite // todo
         Image(
+            modifier = Modifier.fillMaxSize(0.8F),
             painter = painterResource(id = listItem.sprite),
             contentDescription = null,
-            contentScale = ContentScale.None
+            contentScale = ContentScale.Fit
+
         )
         TextButton(
             onClick = {snesVersionViewModel.setFocusedCharacter(listItem.id)}
         ){
-            Text(listItem.id.toString())
+            Text("")
         }
     }
 }

@@ -5,7 +5,6 @@ abstract class CharacterClass() {
     abstract val name: String
 
 //    abstract val characterAlignment : CharacterAlignment
-    abstract val level: Int
     abstract val walkInWater: Boolean
     abstract val fly: Boolean
     abstract val teleport: Boolean

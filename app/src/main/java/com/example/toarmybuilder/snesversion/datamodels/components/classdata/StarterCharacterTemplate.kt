@@ -12,5 +12,7 @@ abstract class StarterCharacterTemplate{
     abstract val int: Int
     abstract val men: Int
     abstract val sprite: Int
+    open val spriteChangeable: Boolean = true
     abstract val initialClass: CharacterClass
+    abstract val classOptions: List<CharacterClass>
 }

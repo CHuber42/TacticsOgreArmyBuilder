@@ -6,25 +6,11 @@ import com.example.toarmybuilder.snesversion.datamodels.components.Element
 import com.example.toarmybuilder.R
 
 object Warlock: CharacterClass(){
+    // Title Attributes
     override val name : String = "Warlock"
-    override val sprite : Int = R.drawable.malewarlock1
-    override val level: Int = 1
-    override val acceptableCharacterAlignment: List<CharacterAlignment> = listOf(
-        CharacterAlignment.LAWFUL,
-        CharacterAlignment.NEUTRAL
-    )
-    override val fly: Boolean = false
-    override val teleport: Boolean = false
-    override val walkInWater: Boolean = false
-    override val walkOnLava: Boolean = false
-    override val acceptableElement: List<Element> = listOf(
-        Element.WIND,
-        Element.EARTH,
-        Element.WATER,
-        Element.FIRE
-    )
-    override val movement: Int = 5
-//    override val jump: Int
+    override val sprite : Int = R.drawable.male_warlock1
+
+    // Stat Growths
     override val hp: Int = 5
     override val mp: Int = 7
     override val str: Int = 3
@@ -33,12 +19,29 @@ object Warlock: CharacterClass(){
     override val agi: Int = 3
     override val int: Int = 6
     override val men: Int = 8
+
+    // Constant Stats
+    override val movement: Int = 5
     override val wt: Int = 15
-//    override val lefthand: String,
-//    override val righthand: String,
-//    override val body: String,
-//    override val accessory: String,
-//    override val characterAlignment: CharacterAlignment
+    
+    // Alignment and Element Attributes
+    override val acceptableCharacterAlignment: List<CharacterAlignment> = listOf(
+        CharacterAlignment.LAWFUL,
+        CharacterAlignment.NEUTRAL
+    )
+    override val acceptableElement: List<Element> = listOf(
+        Element.WIND,
+        Element.EARTH,
+        Element.WATER,
+        Element.FIRE
+    )
+
+    // Movement Modifiers
+    override val fly: Boolean = false
+    override val teleport: Boolean = false
+    override val walkInWater: Boolean = false
+    override val walkOnLava: Boolean = false
+
 //    init {
 //        super.setAlignmentValid(characterAlignment)
 //        super.setMpValid(84)

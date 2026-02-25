@@ -9,4 +9,5 @@ object FemaleJobs {
     val Siren = com.example.toarmybuilder.snesversion.datamodels.components.classdata.female.Siren
     val Valkyrie = com.example.toarmybuilder.snesversion.datamodels.components.classdata.female.Valkyrie
     val Witch = com.example.toarmybuilder.snesversion.datamodels.components.classdata.female.Witch
+    val AngelKnight = com.example.toarmybuilder.snesversion.datamodels.components.classdata.female.AngelKnight
 }

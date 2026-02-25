@@ -24,7 +24,7 @@ fun CharacterLevelsColumn(
         horizontalAlignment = Alignment.CenterHorizontally
     ){
         itemsIndexed(levels){ index, item ->
-            LevelRow(index, item)
+            LevelRow(index, focusedCharacter)
         }
     }
 }

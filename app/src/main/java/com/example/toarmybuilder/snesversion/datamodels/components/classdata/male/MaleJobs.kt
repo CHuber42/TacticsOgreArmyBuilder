@@ -1,7 +1,7 @@
 package com.example.toarmybuilder.snesversion.datamodels.components.classdata.male
 
 object MaleJobs {
-    val Warrior = com.example.toarmybuilder.snesversion.datamodels.components.classdata.male.Warrior
+    val Soldier = com.example.toarmybuilder.snesversion.datamodels.components.classdata.male.Soldier
     val BeastTamer = com.example.toarmybuilder.snesversion.datamodels.components.classdata.male.BeastTamer
     val Berserker = com.example.toarmybuilder.snesversion.datamodels.components.classdata.male.Berserker
     val Knight = com.example.toarmybuilder.snesversion.datamodels.components.classdata.male.Knight
