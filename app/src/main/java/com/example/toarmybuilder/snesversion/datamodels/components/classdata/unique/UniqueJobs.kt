@@ -1,6 +1,7 @@
 package com.example.toarmybuilder.snesversion.datamodels.components.classdata.unique
 
 object UniqueJobs {
+    val Princess = com.example.toarmybuilder.snesversion.datamodels.components.classdata.unique.Princess
     val Ganb = BeastMaster
     val Canopus = Eagleman
     val Guildus = com.example.toarmybuilder.snesversion.datamodels.components.classdata.unique.Guildus

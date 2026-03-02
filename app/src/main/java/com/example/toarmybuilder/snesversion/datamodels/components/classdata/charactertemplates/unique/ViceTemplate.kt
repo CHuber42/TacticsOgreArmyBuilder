@@ -42,3 +42,28 @@ object ViceTemplate : StarterCharacterTemplate() {
             Jobs.Male.Gunner,
         )
 }
+
+object Vice3LTemplate : StarterCharacterTemplate() {
+    // 3L Route
+    override val sprite: Int = R.drawable.unique_vice1
+    override val spriteChangeable: Boolean = false
+    override val initialLevel: Int = 21
+    override val element: Element = Element.WATER // TODO Changeable?
+    override val alignment: CharacterAlignment = CharacterAlignment.NEUTRAL // TODO Changeable?
+
+    override val hp: Int = 229
+    override val mp: Int = 104
+    override val str: Int = 167
+    override val vit: Int = 125
+    override val int: Int = 144
+    override val men: Int = 144
+    override val agi: Int = 166
+    override val dex: Int = 166
+    override val luk: Int = 55
+
+    override val initialClass: CharacterClass = Jobs.Unique.Vice
+    override val classOptions: List<CharacterClass> =
+        listOf(
+            Jobs.Unique.Vice
+        )
+}

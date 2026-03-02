@@ -7,27 +7,27 @@ import com.example.toarmybuilder.snesversion.datamodels.components.Element
 import com.example.toarmybuilder.snesversion.datamodels.components.Jobs
 import com.example.toarmybuilder.snesversion.datamodels.components.classdata.StarterCharacterTemplate
 
-object GuildusTemplate : StarterCharacterTemplate() {
-    // 3L Route
-    override val sprite: Int = R.drawable.unique_guildus1
+object GanbTemplate : StarterCharacterTemplate() {
+    //4L Path
+    override val sprite: Int = R.drawable.male_beasttamer1 //TODO: Fix with beast tamer sprite
     override val spriteChangeable: Boolean = false
-    override val initialLevel: Int = 21
+    override val initialLevel: Int = 30
     override val element: Element = Element.WATER
-    override val alignment = CharacterAlignment.LAWFUL
+    override val alignment = CharacterAlignment.NEUTRAL
 
-    override val hp: Int = 247
-    override val mp: Int = 0
-    override val str: Int = 158
-    override val vit: Int = 138
-    override val int: Int = 124
-    override val men: Int = 155
-    override val agi: Int = 159
-    override val dex: Int = 176
-    override val luk: Int = 53
+    override val hp: Int = 321
+    override val mp: Int = 20
+    override val str: Int = 224
+    override val vit: Int = 219
+    override val int: Int = 145
+    override val men: Int = 196
+    override val agi: Int = 203
+    override val dex: Int = 198
+    override val luk: Int = 54
 
-    override val initialClass: CharacterClass = Jobs.Unique.Guildus
+    override val initialClass: CharacterClass = Jobs.Unique.Ganb
     override val classOptions: List<CharacterClass> =
         listOf(
-            Jobs.Unique.Guildus
+            Jobs.Unique.Ganb
         )
 }
