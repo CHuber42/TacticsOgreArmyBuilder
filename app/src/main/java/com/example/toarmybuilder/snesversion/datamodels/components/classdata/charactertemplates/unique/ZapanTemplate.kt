@@ -25,7 +25,7 @@ object ZapanTemplate : StarterCharacterTemplate() {
     override val dex: Int = 80
     override val luk: Int = 59
 
-    override val initialClass: CharacterClass = Jobs.Male.Knight
+    override val initialClass: CharacterClass = Jobs.Male.Berserker
     override val classOptions: List<CharacterClass> =
         listOf(
             Jobs.Male.Soldier,
