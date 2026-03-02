@@ -8,7 +8,7 @@ import com.example.toarmybuilder.snesversion.datamodels.components.Element
 object HighPriest : CharacterClass() {
     // TODO Kachua High Priest stats
     // Title Attributes
-    override val name: String = "High Priest"
+    override val name: String = "High Priest (Kachua)"
     override val sprite : Int = R.drawable.unique_princess1
 
     // Stat Growths

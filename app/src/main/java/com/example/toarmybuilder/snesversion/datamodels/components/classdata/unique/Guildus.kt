@@ -7,7 +7,7 @@ import com.example.toarmybuilder.snesversion.datamodels.components.Element
 
 object Guildus : CharacterClass() {
     // Title Attributes
-    override val name: String = "Guildus"
+    override val name: String = "White Knight (Guildus)"
     override val sprite : Int = R.drawable.unique_guildus1
 
     // Stat Growths

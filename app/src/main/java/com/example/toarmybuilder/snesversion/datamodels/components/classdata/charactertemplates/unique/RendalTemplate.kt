@@ -9,7 +9,7 @@ import com.example.toarmybuilder.snesversion.datamodels.components.classdata.Sta
 
 object RendalTemplate : StarterCharacterTemplate() {
     //4L Path
-    override val sprite: Int = R.drawable.male_fusilier1 //TODO: Fix with gunner sprite
+    override val sprite: Int = R.drawable.unique_gunner1
     override val spriteChangeable: Boolean = false
     override val initialLevel: Int = 29
     override val element: Element = Element.WIND

@@ -7,7 +7,7 @@ import com.example.toarmybuilder.snesversion.datamodels.components.Element
 
 object Princess : CharacterClass() {
     // Title Attributes
-    override val name: String = "Princess"
+    override val name: String = "Princess (Kachua)"
     override val sprite : Int = R.drawable.unique_princess1
 
     // Stat Growths

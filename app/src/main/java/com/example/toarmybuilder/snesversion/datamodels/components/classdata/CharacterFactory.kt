@@ -1,6 +1,7 @@
 package com.example.toarmybuilder.snesversion.datamodels.components.classdata
 
 import com.example.toarmybuilder.snesversion.datamodels.components.CharacterClass
+import com.example.toarmybuilder.snesversion.datamodels.components.Jobs
 
 data class CharacterFactory(
     val template: StarterCharacterTemplate,
@@ -14,7 +15,7 @@ data class CharacterFactory(
     var men: Int = template.men,
     var sprite: Int = template.sprite,
     val spriteChangeable : Boolean = template.spriteChangeable,
-    val levels: List<CharacterClass> = List<CharacterClass>(50){template.initialClass},
+    val levels: List<CharacterClass> = List(50) { if (it < template.initialLevel) Jobs.Unique.PreRecruit else template.initialClass },
     val id: Int
 ) {
     init {
@@ -22,6 +23,7 @@ data class CharacterFactory(
             applyLevelUp(level)
         }
     }
+
     fun applyLevelUp(classLevel: CharacterClass){
         this.hp += classLevel.hp
         this.mp += classLevel.mp

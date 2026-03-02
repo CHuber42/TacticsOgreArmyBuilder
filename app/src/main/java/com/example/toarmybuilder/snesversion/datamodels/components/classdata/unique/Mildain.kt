@@ -7,7 +7,7 @@ import com.example.toarmybuilder.snesversion.datamodels.components.Element
 
 object Mildain : CharacterClass() {
     // Title Attributes
-    override val name: String = "Dragon"
+    override val name: String = "White Knight (Mildain)"
     override val sprite : Int = R.drawable.unique_mildain1
 
     // Stat Growths

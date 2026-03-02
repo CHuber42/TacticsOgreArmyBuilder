@@ -8,20 +8,32 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import com.example.toarmybuilder.snesversion.datamodels.components.classdata.CharacterFactory
+import com.example.toarmybuilder.snesversion.datamodels.components.classdata.charactertemplates.dragon.DragonTemplate
 import com.example.toarmybuilder.snesversion.datamodels.components.classdata.charactertemplates.female.AmazonTemplate
 import com.example.toarmybuilder.snesversion.datamodels.components.classdata.charactertemplates.male.SoldierTemplate
+import com.example.toarmybuilder.snesversion.datamodels.components.classdata.charactertemplates.monster.GryphonTemplate
+import com.example.toarmybuilder.snesversion.datamodels.components.classdata.charactertemplates.unique.CanopusTemplate
+import com.example.toarmybuilder.snesversion.datamodels.components.classdata.charactertemplates.unique.GuildusTemplate
+import com.example.toarmybuilder.snesversion.datamodels.components.classdata.charactertemplates.unique.HaborymTemplate
+import com.example.toarmybuilder.snesversion.datamodels.components.classdata.charactertemplates.unique.KachuaTemplate
+import com.example.toarmybuilder.snesversion.datamodels.components.classdata.charactertemplates.unique.MildainTemplate
+import com.example.toarmybuilder.snesversion.datamodels.components.classdata.charactertemplates.unique.OliviaTemplate
+import com.example.toarmybuilder.snesversion.datamodels.components.classdata.charactertemplates.unique.PrincessTemplate
+import com.example.toarmybuilder.snesversion.datamodels.components.classdata.charactertemplates.unique.RendalTemplate
+import com.example.toarmybuilder.snesversion.datamodels.components.classdata.charactertemplates.unique.ShelleyTemplate
+import com.example.toarmybuilder.snesversion.datamodels.components.classdata.charactertemplates.unique.SisteenaTemplate
 
 val starterArmy = listOf(
-    CharacterFactory(template = SoldierTemplate, id = 1, spriteChangeable = false),
-    CharacterFactory(template = SoldierTemplate, id = 2),
-    CharacterFactory(template = SoldierTemplate, id = 3),
-    CharacterFactory(template = SoldierTemplate, id = 4),
-    CharacterFactory(template = SoldierTemplate, id = 5),
-    CharacterFactory(template = AmazonTemplate, id = 6),
-    CharacterFactory(template = AmazonTemplate, id = 7),
-    CharacterFactory(template = AmazonTemplate, id = 8),
-    CharacterFactory(template = AmazonTemplate, id = 9),
-    CharacterFactory(template = AmazonTemplate, id = 10, levels = List<CharacterClass>(2){ Jobs.Dragon.BlackDragon})
+    CharacterFactory(template = MildainTemplate, id = 1),
+    CharacterFactory(template = GuildusTemplate, id = 2),
+    CharacterFactory(template = HaborymTemplate, id = 3),
+    CharacterFactory(template = KachuaTemplate, id = 4),
+    CharacterFactory(template = CanopusTemplate, id = 5),
+    CharacterFactory(template = OliviaTemplate, id = 6),
+    CharacterFactory(template = PrincessTemplate, id = 7),
+    CharacterFactory(template = ShelleyTemplate, id = 8),
+    CharacterFactory(template = SisteenaTemplate, id = 9),
+    CharacterFactory(template = RendalTemplate, id = 10)
 )
 class SnesVersionViewModel : ViewModel() {
 

@@ -9,8 +9,8 @@ import com.example.toarmybuilder.snesversion.datamodels.components.classdata.Sta
 
 object HaborymTemplate : StarterCharacterTemplate() {
     //4L Route
-    override val sprite: Int = R.drawable.male_swordmaster1
-    override val spriteChangeable: Boolean = true
+    override val sprite: Int = R.drawable.unique_haborym1
+    override val spriteChangeable: Boolean = false
     override val initialLevel: Int = 22
     override val element: Element = Element.FIRE
     override val alignment = CharacterAlignment.LAWFUL

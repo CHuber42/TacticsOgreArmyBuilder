@@ -9,7 +9,7 @@ import com.example.toarmybuilder.snesversion.datamodels.components.classdata.Sta
 
 object GanbTemplate : StarterCharacterTemplate() {
     //4L Path
-    override val sprite: Int = R.drawable.male_beasttamer1 //TODO: Fix with beast tamer sprite
+    override val sprite: Int = R.drawable.unique_ganb1 //TODO: Fix with beast tamer sprite
     override val spriteChangeable: Boolean = false
     override val initialLevel: Int = 30
     override val element: Element = Element.WATER
