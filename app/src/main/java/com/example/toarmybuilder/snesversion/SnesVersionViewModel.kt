@@ -3,15 +3,11 @@ package com.example.toarmybuilder.snesversion
 import androidx.compose.runtime.toMutableStateList
 import androidx.lifecycle.ViewModel
 import com.example.toarmybuilder.snesversion.datamodels.components.CharacterClass
-import com.example.toarmybuilder.snesversion.datamodels.components.Jobs
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import com.example.toarmybuilder.snesversion.datamodels.components.classdata.CharacterFactory
-import com.example.toarmybuilder.snesversion.datamodels.components.classdata.charactertemplates.dragon.DragonTemplate
-import com.example.toarmybuilder.snesversion.datamodels.components.classdata.charactertemplates.female.AmazonTemplate
 import com.example.toarmybuilder.snesversion.datamodels.components.classdata.charactertemplates.male.SoldierTemplate
-import com.example.toarmybuilder.snesversion.datamodels.components.classdata.charactertemplates.monster.GryphonTemplate
 import com.example.toarmybuilder.snesversion.datamodels.components.classdata.charactertemplates.unique.CanopusTemplate
 import com.example.toarmybuilder.snesversion.datamodels.components.classdata.charactertemplates.unique.GuildusTemplate
 import com.example.toarmybuilder.snesversion.datamodels.components.classdata.charactertemplates.unique.HaborymTemplate
@@ -24,7 +20,7 @@ import com.example.toarmybuilder.snesversion.datamodels.components.classdata.cha
 import com.example.toarmybuilder.snesversion.datamodels.components.classdata.charactertemplates.unique.SisteenaTemplate
 
 val starterArmy = listOf(
-    CharacterFactory(template = MildainTemplate, id = 1),
+    CharacterFactory(template = SoldierTemplate, id = 1),
     CharacterFactory(template = GuildusTemplate, id = 2),
     CharacterFactory(template = HaborymTemplate, id = 3),
     CharacterFactory(template = KachuaTemplate, id = 4),
@@ -49,10 +45,12 @@ class SnesVersionViewModel : ViewModel() {
         _focusedCharacter.value = replacement
     }
     fun updateCharacterLevels(levelIndex: Int, levelType: CharacterClass){
-        val source = focusedCharacter.value
-        val sourceLevels = focusedCharacter.value.levels.toMutableList()
-        sourceLevels[levelIndex] = levelType
-        val replacement = CharacterFactory(template = source.template, id = source.id, levels = sourceLevels, spriteChangeable = source.spriteChangeable)
+        val characterBeingUpdated = focusedCharacter.value
+        val newLevels = List(50){if (it == levelIndex) levelType else characterBeingUpdated.levels[it]}
+        val replacement = CharacterFactory(
+            template = characterBeingUpdated.template,
+            id = characterBeingUpdated.id,
+            levels = newLevels)
         _focusedCharacter.value = replacement
         _armyList.replaceAll {if (it.id == replacement.id) replacement else it}
     }
