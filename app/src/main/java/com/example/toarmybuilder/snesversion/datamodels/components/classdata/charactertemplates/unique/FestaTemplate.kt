@@ -7,25 +7,25 @@ import com.example.toarmybuilder.snesversion.datamodels.components.Element
 import com.example.toarmybuilder.snesversion.datamodels.components.Jobs
 import com.example.toarmybuilder.snesversion.datamodels.components.classdata.StarterCharacterTemplate
 
-object OliviaTemplate : StarterCharacterTemplate() {
-    // Chapter 4 All Paths
-    override val sprite: Int = R.drawable.unique_waterolivia1
-    override val spriteChangeable: Boolean = false
-    override val initialLevel: Int = 25
-    override val element: Element = Element.WATER
+// 3N Route
+object FestaTemplate : StarterCharacterTemplate() {
+    override val sprite: Int = R.drawable.female_valkyrie1
+    override val spriteChangeable: Boolean = true
+    override val initialLevel: Int = 17
+    override val element: Element = Element.EARTH
     override val alignment = CharacterAlignment.LAWFUL
 
-    override val hp: Int = 234
-    override val mp: Int = 157
-    override val str: Int = 138
-    override val vit: Int = 113
-    override val int: Int = 229
-    override val men: Int = 195
-    override val agi: Int = 138
-    override val dex: Int = 141
-    override val luk: Int = 55
+    override val hp: Int = 198
+    override val mp: Int = 52
+    override val str: Int = 128
+    override val vit: Int = 100
+    override val int: Int = 126
+    override val men: Int = 113
+    override val agi: Int = 104
+    override val dex: Int = 118
+    override val luk: Int = 50
 
-    override val initialClass: CharacterClass = Jobs.Female.Priest
+    override val initialClass: CharacterClass = Jobs.Female.Valkyrie
     override val classOptions: List<CharacterClass> =
         listOf(
             Jobs.Female.Amazon,
@@ -36,7 +36,6 @@ object OliviaTemplate : StarterCharacterTemplate() {
             Jobs.Female.DragonTamer,
             Jobs.Female.Siren,
             Jobs.Female.Priest,
-            Jobs.Female.AngelKnight,
-            Jobs.Unique.Olivia
+            Jobs.Female.AngelKnight
         )
 }

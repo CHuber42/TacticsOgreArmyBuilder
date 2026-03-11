@@ -8,7 +8,7 @@ import com.example.toarmybuilder.snesversion.datamodels.components.Jobs
 import com.example.toarmybuilder.snesversion.datamodels.components.classdata.StarterCharacterTemplate
 
 object ShelleyTemplate : StarterCharacterTemplate() {
-    // 4L Path
+    // 4L, 4N Path
     override val sprite: Int = R.drawable.unique_earthshelley1
     override val spriteChangeable: Boolean = false
     override val initialLevel: Int = 27
@@ -37,6 +37,6 @@ object ShelleyTemplate : StarterCharacterTemplate() {
             Jobs.Female.Siren,
             Jobs.Female.Priest,
             Jobs.Female.AngelKnight,
-            Jobs.Unique.Sisteena
+            Jobs.Unique.Shelley
         )
 }

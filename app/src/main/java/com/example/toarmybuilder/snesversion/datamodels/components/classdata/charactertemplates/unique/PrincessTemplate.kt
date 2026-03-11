@@ -8,7 +8,7 @@ import com.example.toarmybuilder.snesversion.datamodels.components.Jobs
 import com.example.toarmybuilder.snesversion.datamodels.components.classdata.StarterCharacterTemplate
 
 object PrincessTemplate : StarterCharacterTemplate() {
-    // 4L Path
+    // 4L + 4N Path
     override val sprite: Int = R.drawable.unique_princess1
     override val spriteChangeable: Boolean = false
     override val initialLevel: Int = 28
